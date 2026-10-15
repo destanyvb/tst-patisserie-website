@@ -95,7 +95,7 @@ export default function Nav() {
           </a>
           <Link
             to="/custom-cakes"
-            className="px-5 py-2.5 bg-gold text-white font-body text-sm font-semibold rounded-full hover:bg-gold/90 transition-colors"
+            className="px-5 py-2.5 bg-lemon text-navy font-body text-sm font-bold rounded-full hover:bg-lemon/80 transition-colors shadow-sm"
           >
             Make Enquiry
           </Link>
@@ -133,7 +133,7 @@ export default function Nav() {
             ))}
             <Link
               to="/custom-cakes"
-              className="mt-2 inline-block px-5 py-3 bg-gold text-white font-body text-sm font-semibold rounded-full text-center"
+              className="mt-2 inline-block px-5 py-3 bg-lemon text-navy font-body text-sm font-bold rounded-full text-center"
             >
               Make Enquiry
             </Link>
