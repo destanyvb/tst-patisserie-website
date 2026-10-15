@@ -327,10 +327,10 @@ export default function HomePage() {
             {/* Left: café exterior photo */}
             <motion.div {...up()} className="relative rounded-3xl overflow-hidden shadow-lg h-80 lg:h-auto" style={{ minHeight: 280 }}>
               <img
-                src="/images/tst_shopfront.webp"
-                alt="The Sweetest Thing Patisserie, 82 St George's Street, Simon's Town"
+                src="/images/tst_exterior.webp"
+                alt="The Sweetest Thing Patisserie on St George's Street, Simon's Town"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: 'center 25%' }}
+                style={{ objectPosition: 'center 20%' }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/55 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
