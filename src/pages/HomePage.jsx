@@ -311,55 +311,79 @@ export default function HomePage() {
 
       {/* ── FIND US ─────────────────────────────────────────── */}
       <section className="py-28 px-4 sm:px-6 bg-pbluePale">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <motion.div {...up()} className="relative">
-            <div className="relative rounded-3xl overflow-hidden h-80 shadow-lg">
-              <img src="/images/boulders_beach_penguins.jpg" alt="African penguins at Boulders Beach near Simon's Town"
+        <div className="max-w-6xl mx-auto">
+
+          <motion.div {...up()} className="text-center mb-12">
+            <p className="font-body text-xs tracking-[0.22em] uppercase text-pblue font-semibold mb-3">
+              Find Us in Simon's Town
+            </p>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-espresso">
+              Come and see what's on the counter.
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+
+            {/* Left: café exterior photo */}
+            <motion.div {...up()} className="relative rounded-3xl overflow-hidden shadow-lg h-80 lg:h-auto" style={{ minHeight: 280 }}>
+              <img
+                src="/images/tst_shopfront.webp"
+                alt="The Sweetest Thing Patisserie, 82 St George's Street, Simon's Town"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: 'center 85%' }} />
-              <div className="absolute inset-0 bg-gradient-to-t from-espresso/60 via-espresso/10 to-transparent" />
+                style={{ objectPosition: 'center 25%' }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-espresso/55 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
-                <p className="font-display text-xl font-bold text-cream leading-snug drop-shadow-lg">
+                <p className="font-display text-lg font-bold text-cream leading-snug drop-shadow-lg">
                   A Little Café with a Big Heart.
                 </p>
               </div>
-            </div>
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-2xl bg-pyellowPale border border-pyellowMid/40 -z-10" />
-          </motion.div>
+            </motion.div>
 
-          <motion.div {...up(0.15)}>
-            <p className="font-body text-xs tracking-[0.22em] uppercase text-pblue font-semibold mb-4">
-              Find Us in Simon's Town
-            </p>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-espresso mb-8 leading-tight">
-              Come and see what's on the counter.
-            </h2>
-            <div className="space-y-5 mb-9">
-              {[
-                { t: '82 St George\'s Street, Simon\'s Town, Cape Town', s: null },
-                { t: '021 786 4200', s: null },
-                { t: 'Open Daily', s: 'Mon to Fri 8am to 5pm · Sat to Sun 9am to 4pm' },
-              ].map(({ t, s }) => (
-                <div key={t} className="flex items-start gap-4">
-                  <span className="w-2 h-2 mt-1.5 rounded-full bg-pblue flex-shrink-0" />
-                  <div>
-                    <p className="font-body text-sm font-semibold text-espresso">{t}</p>
-                    {s && <p className="font-body text-xs text-muted mt-0.5">{s}</p>}
+            {/* Middle: contact info */}
+            <motion.div {...up(0.1)}
+              className="flex flex-col justify-center rounded-3xl p-8 shadow-sm border border-pblueMid/30"
+              style={{ background: 'rgba(255,255,255,0.75)' }}>
+              <div className="space-y-5 mb-8">
+                {[
+                  { t: '82 St George\'s Street, Simon\'s Town, Cape Town', s: null },
+                  { t: '021 786 4200', s: null },
+                  { t: 'Open Daily', s: 'Mon to Fri 8am to 5pm · Sat to Sun 9am to 4pm' },
+                ].map(({ t, s }) => (
+                  <div key={t} className="flex items-start gap-4">
+                    <span className="w-2 h-2 mt-1.5 rounded-full bg-pblue flex-shrink-0" />
+                    <div>
+                      <p className="font-body text-sm font-semibold text-espresso">{t}</p>
+                      {s && <p className="font-body text-xs text-muted mt-0.5">{s}</p>}
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-            <div className="flex flex-wrap gap-3">
-              <Link to="/contact"
-                className="px-7 py-3.5 bg-espresso text-cream font-body font-semibold text-sm rounded-full hover:bg-espresso/85 transition-all">
-                Get Directions
-              </Link>
-              <a href="tel:+27217864200"
-                className="px-7 py-3.5 border border-espresso/30 text-espresso font-body font-semibold text-sm rounded-full hover:border-espresso transition-all">
-                021 786 4200
-              </a>
-            </div>
-          </motion.div>
+                ))}
+              </div>
+              <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-3">
+                <Link to="/contact"
+                  className="px-6 py-3 bg-espresso text-cream font-body font-semibold text-sm rounded-full hover:bg-espresso/85 transition-all text-center">
+                  Get Directions
+                </Link>
+                <a href="tel:+27217864200"
+                  className="px-6 py-3 border border-espresso/30 text-espresso font-body font-semibold text-sm rounded-full hover:border-espresso transition-all text-center">
+                  021 786 4200
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Right: Google Maps embed */}
+            <motion.div {...up(0.2)} className="relative rounded-3xl overflow-hidden shadow-lg h-80 lg:h-auto" style={{ minHeight: 280 }}>
+              <iframe
+                title="The Sweetest Thing Patisserie on Google Maps"
+                src="https://maps.google.com/maps?q=The+Sweetest+Thing+Patisserie,+82+St+George%27s+Street,+Simon%27s+Town,+Cape+Town&output=embed"
+                className="w-full h-full border-0"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </motion.div>
+
+          </div>
         </div>
       </section>
 
