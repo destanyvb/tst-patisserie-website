@@ -44,14 +44,13 @@ export default function Nav() {
         {/* Oval badge logo — striped border replicating the original hanging sign */}
         <Link to="/" className="flex-shrink-0 group">
           <div className="relative flex items-center justify-center w-[120px] h-[68px] md:w-[136px] md:h-[76px]">
-            {/* Alternating gold / light-yellow bands — outer to inner */}
-            <div className="absolute inset-0 rounded-[50%]" style={{ background: '#C8A865' }} />
-            <div className="absolute inset-[3px] rounded-[50%]" style={{ background: '#FAE9A0' }} />
-            <div className="absolute inset-[5px] rounded-[50%]" style={{ background: '#C8A865' }} />
-            <div className="absolute inset-[7px] rounded-[50%]" style={{ background: '#FAE9A0' }} />
-            <div className="absolute inset-[9px] rounded-[50%]" style={{ background: '#C8A865' }} />
+            {/* Outer oval — vertical gold/light-yellow stripes matching the original hanging sign */}
+            <div
+              className="absolute inset-0 rounded-[50%]"
+              style={{ background: 'repeating-linear-gradient(90deg, #C8A865 0px, #C8A865 4px, #FAE9A0 4px, #FAE9A0 8px)' }}
+            />
             {/* Cream content oval */}
-            <div className="absolute inset-[11px] rounded-[50%] transition-opacity group-hover:opacity-95" style={{ background: '#FAF7F2' }} />
+            <div className="absolute inset-[9px] rounded-[50%] transition-opacity group-hover:opacity-95" style={{ background: '#FAF7F2' }} />
             {/* Logo text */}
             <div className="relative z-10 text-center px-3 leading-none">
               <div className="font-logo text-[8px] md:text-[9px] text-espresso leading-none">The</div>

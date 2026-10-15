@@ -341,18 +341,18 @@ export default function MenuPage() {
       {/* Footer note */}
       <section className="px-4 sm:px-6 pb-20">
         <div className="max-w-3xl mx-auto">
-          <div className="rounded-2xl p-8 text-center" style={{ background: '#1B4965' }}>
-            <p className="font-script text-3xl text-gold mb-2">
+          <div className="rounded-2xl p-8 text-center" style={{ background: '#EBF6FA' }}>
+            <p className="font-script text-3xl text-espresso mb-2">
               The menu changes every day.
             </p>
-            <p className="font-body text-sm text-cream/70 max-w-sm mx-auto leading-relaxed">
+            <p className="font-body text-sm text-muted max-w-sm mx-auto leading-relaxed">
               We do not take phone orders for specific items.
               Come early for the best selection. We sell out.
             </p>
             <div className="mt-6 flex flex-wrap gap-3 justify-center">
               <a
                 href="tel:+27217864200"
-                className="px-6 py-2.5 bg-cream text-espresso font-body text-sm font-semibold rounded-full hover:bg-gold transition-colors"
+                className="px-6 py-2.5 bg-espresso text-cream font-body text-sm font-semibold rounded-full hover:bg-espresso/85 transition-colors"
               >
                 Call 021 786 4200
               </a>
@@ -360,7 +360,7 @@ export default function MenuPage() {
                 href="https://maps.google.com/?q=82+St+George%27s+Street+Simon%27s+Town+Cape+Town"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-2.5 border border-cream/30 text-cream font-body text-sm font-semibold rounded-full hover:border-gold hover:text-gold transition-colors"
+                className="px-6 py-2.5 border border-espresso/30 text-espresso font-body text-sm font-semibold rounded-full hover:border-gold hover:text-gold transition-colors"
               >
                 Get Directions
               </a>

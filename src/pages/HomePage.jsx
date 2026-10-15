@@ -18,7 +18,7 @@ const categories = [
 
 const signature = [
   { name: 'Croissants & Pastries',  sub: 'Laminated by hand each morning',       img: '/images/gallery_croissants.jpg',    to: '/menu',         pos: 'center' },
-  { name: 'Celebration Cakes',      sub: 'Naked, layered, dressed with fruit',    img: '/images/tst_victoria_cake.jpg',     to: '/custom-cakes', pos: 'center 55%' },
+  { name: 'Celebration Cakes',      sub: 'Naked, layered, dressed with fruit',    img: '/images/tst_victoria_cake.jpg',     to: '/custom-cakes', pos: 'center 75%' },
   { name: 'Signature Desserts',     sub: 'Fresh tarts and desserts from the case', img: '/images/tst_fruit_tart.webp',      to: '/menu',         pos: 'center' },
   { name: 'Berry Cupcakes',         sub: 'Seasonal fruit, fresh cream frosting',  img: '/images/tst_cupcakes.jpg',          to: '/menu',         pos: 'center' },
 ]
@@ -42,12 +42,12 @@ export default function HomePage() {
 
       {/* ── HERO ────────────────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center overflow-hidden pt-24">
-        {/* The actual TST shopfront on St George's Street, Simon's Town */}
+        {/* Coastal café hero — harbour view, yellow umbrella, croissant on mosaic table */}
         <img
-          src="/images/tst_shopfront.webp"
-          alt="The Sweetest Thing Patisserie, 82 St George's Street, Simon's Town"
+          src="/images/hero_cafe_coastal.webp"
+          alt="The Sweetest Thing Patisserie — café by the harbour in Simon's Town"
           className="absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: 'center 25%' }}
+          style={{ objectPosition: 'center center' }}
         />
         {/* Cream wash left so text stays readable; right side reveals the shopfront */}
         <div className="absolute inset-0 bg-gradient-to-r from-cream/92 via-cream/65 to-cream/15" />
