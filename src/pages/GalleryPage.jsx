@@ -1,13 +1,18 @@
 import { motion } from 'framer-motion'
 
 const photos = [
-  { src: '/images/gallery_display.jpg',      alt: 'The Sweetest Thing Patisserie display case',         caption: 'The counter, every morning'        },
-  { src: '/images/gallery_croissants.jpg',   alt: 'Freshly baked butter croissants',                    caption: 'Butter croissants, laminated by hand' },
-  { src: '/images/gallery_custard_tarts.jpg',alt: 'Pasteis de nata, Portuguese custard tarts',          caption: 'Pasteis de nata'                   },
-  { src: '/images/gallery_tarts.jpg',        alt: 'Fresh tartlets',                                     caption: 'Daily tartlet selection'           },
-  { src: '/images/gallery_coffee.jpg',       alt: 'Coffee at The Sweetest Thing Patisserie',            caption: 'Freshly brewed coffee'             },
-  { src: '/images/gallery_baked_goods.jpg',  alt: 'Freshly baked goods',                                caption: 'Baked that morning'                },
-  { src: '/images/hero.jpg',                 alt: 'A creation from The Sweetest Thing Patisserie',      caption: 'Made from scratch, every day'      },
+  { src: '/images/tst_shop_shelf.webp',      alt: 'The Sweetest Thing shop display shelf',              caption: 'The shop, 82 St George\'s Street'          },
+  { src: '/images/gallery_croissants.jpg',   alt: 'Freshly baked butter croissants',                    caption: 'Butter croissants, laminated by hand'      },
+  { src: '/images/tst_fruit_tart.webp',      alt: 'Seasonal fruit tart with strawberries and kiwi',     caption: 'Seasonal fruit tart'                       },
+  { src: '/images/tst_victoria_cake.jpg',    alt: 'Naked celebration cake dressed with figs and berries', caption: 'Celebration cake, dressed with fresh fruit' },
+  { src: '/images/gallery_coffee.jpg',       alt: 'Coffee at The Sweetest Thing Patisserie',            caption: 'Freshly brewed coffee'                     },
+  { src: '/images/tst_cupcakes.jpg',         alt: 'Berry cupcakes with fresh strawberry garnish',       caption: 'Berry cupcakes, made that morning'         },
+  { src: '/images/tst_caramel_tart.webp',    alt: 'Caramel tart sliced on a stand',                     caption: 'Caramel tart, baked fresh daily'           },
+  { src: '/images/tst_ig_02.jpg',            alt: 'High tea spread with macarons and pastries',         caption: 'High tea and special spreads'              },
+  { src: '/images/tst_catering.webp',        alt: 'Catering display with tiered pastry stand',          caption: 'Events and catering'                       },
+  { src: '/images/tst_brownies.jpg',         alt: 'Chocolate walnut brownies stacked',                  caption: 'Chocolate brownies with walnuts'           },
+  { src: '/images/tst_passionfruit_tart.jpg', alt: 'Passionfruit cheesecake tart',                      caption: 'Passionfruit tart'                         },
+  { src: '/images/tst_linzer_cookies.webp',  alt: 'Jam star linzer cookies fresh from the oven',        caption: 'Jam star cookies'                          },
 ]
 
 export default function GalleryPage() {

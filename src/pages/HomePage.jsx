@@ -17,17 +17,17 @@ const categories = [
 ]
 
 const signature = [
-  { name: 'Croissants & Pastries',  sub: 'Laminated by hand each morning',       img: '/images/gallery_croissants.jpg',   to: '/menu',         pos: 'center' },
-  { name: 'Celebration Cakes',      sub: 'Naked, layered, dressed with fruit',    img: '/images/tst_victoria_cake.jpg',    to: '/custom-cakes', pos: 'top'    },
-  { name: 'Signature Desserts',     sub: 'Made to order or from the case',        img: '/images/tst_ig_01.jpg',            to: '/custom-cakes', pos: 'center' },
-  { name: 'Berry Cupcakes',         sub: 'Seasonal fruit, fresh cream frosting',  img: '/images/tst_cupcakes.jpg',         to: '/menu',         pos: 'center' },
+  { name: 'Croissants & Pastries',  sub: 'Laminated by hand each morning',       img: '/images/gallery_croissants.jpg',    to: '/menu',         pos: 'center' },
+  { name: 'Celebration Cakes',      sub: 'Naked, layered, dressed with fruit',    img: '/images/tst_victoria_cake.jpg',     to: '/custom-cakes', pos: 'center' },
+  { name: 'Signature Desserts',     sub: 'Fresh tarts and desserts from the case', img: '/images/tst_fruit_tart.webp',      to: '/menu',         pos: 'center' },
+  { name: 'Berry Cupcakes',         sub: 'Seasonal fruit, fresh cream frosting',  img: '/images/tst_cupcakes.jpg',          to: '/menu',         pos: 'center' },
 ]
 
 const gallery = [
-  { img: '/images/tst_victoria_cake.jpg',       label: 'Celebration Cakes' },
-  { img: '/images/tst_cupcakes.jpg',             label: 'Berry Cupcakes'    },
-  { img: '/images/gallery_custard_tarts.jpg',    label: 'Pasteis de Nata'   },
-  { img: '/images/tst_ig_02.jpg',                label: 'High Tea Spread'   },
+  { img: '/images/tst_catering.webp',          label: 'Catering Spreads'  },
+  { img: '/images/tst_ig_02.jpg',              label: 'High Tea Spread'   },
+  { img: '/images/tst_passionfruit_tart.jpg',  label: 'Passionfruit Tart' },
+  { img: '/images/tst_linzer_cookies.webp',    label: 'Jam Star Cookies'  },
 ]
 
 const reviews = [
