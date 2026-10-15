@@ -99,7 +99,7 @@ export default function AboutPage() {
       </section>
 
       {/* Principles */}
-      <section className="bg-espresso py-20 px-4 sm:px-6">
+      <section className="py-20 px-4 sm:px-6" style={{ background: '#D8DCBA' }}>
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -107,10 +107,10 @@ export default function AboutPage() {
             viewport={{ once: true, amount: 0 }}
             className="mb-12"
           >
-            <p className="font-body text-xs tracking-[0.2em] uppercase text-cream/40 mb-3">
+            <p className="font-body text-xs tracking-[0.2em] uppercase mb-3" style={{ color: '#6B7245' }}>
               How we work
             </p>
-            <h2 className="font-display text-3xl font-bold text-cream">
+            <h2 className="font-display text-3xl font-bold text-espresso">
               Four principles. No exceptions.
             </h2>
           </motion.div>
@@ -123,15 +123,16 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="border border-cream/10 rounded-xl p-7"
+                className="rounded-xl p-7"
+                style={{ background: 'rgba(255,255,255,0.45)', border: '1px solid rgba(107,114,69,0.20)' }}
               >
-                <div className="w-8 h-8 rounded-full bg-gold/15 flex items-center justify-center mb-4">
-                  <span className="font-display text-sm font-bold text-gold">{i + 1}</span>
+                <div className="w-8 h-8 rounded-full flex items-center justify-center mb-4" style={{ background: 'rgba(107,114,69,0.18)' }}>
+                  <span className="font-display text-sm font-bold" style={{ color: '#6B7245' }}>{i + 1}</span>
                 </div>
-                <h3 className="font-display text-lg font-semibold text-cream mb-2">
+                <h3 className="font-display text-lg font-semibold text-espresso mb-2">
                   {p.title}
                 </h3>
-                <p className="font-body text-sm text-cream/60 leading-relaxed">
+                <p className="font-body text-sm text-muted leading-relaxed">
                   {p.body}
                 </p>
               </motion.div>

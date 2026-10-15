@@ -17,10 +17,10 @@ const categories = [
 ]
 
 const signature = [
-  { name: 'Croissants & Pastries',  sub: 'Laminated by hand each morning',       img: '/images/gallery_croissants.jpg',   to: '/menu'        },
-  { name: 'Celebration Cakes',      sub: 'Naked, layered, dressed with fruit',    img: '/images/tst_victoria_cake.jpg',    to: '/custom-cakes'},
-  { name: 'Signature Desserts',     sub: 'Made to order or from the case',        img: '/images/tst_ig_01.jpg',            to: '/custom-cakes'},
-  { name: 'Berry Cupcakes',         sub: 'Seasonal fruit, fresh cream frosting',  img: '/images/tst_cupcakes.jpg',         to: '/menu'        },
+  { name: 'Croissants & Pastries',  sub: 'Laminated by hand each morning',       img: '/images/gallery_croissants.jpg',   to: '/menu',         pos: 'center' },
+  { name: 'Celebration Cakes',      sub: 'Naked, layered, dressed with fruit',    img: '/images/tst_victoria_cake.jpg',    to: '/custom-cakes', pos: 'top'    },
+  { name: 'Signature Desserts',     sub: 'Made to order or from the case',        img: '/images/tst_ig_01.jpg',            to: '/custom-cakes', pos: 'center' },
+  { name: 'Berry Cupcakes',         sub: 'Seasonal fruit, fresh cream frosting',  img: '/images/tst_cupcakes.jpg',         to: '/menu',         pos: 'center' },
 ]
 
 const gallery = [
@@ -183,7 +183,8 @@ export default function HomePage() {
                 className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group border border-pblueMid/20">
                 <div className="h-48 overflow-hidden">
                   <img src={item.img} alt={item.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    style={{ objectPosition: item.pos }} />
                 </div>
                 <div className="p-5">
                   <h3 className="font-display text-base font-semibold text-espresso mb-1">{item.name}</h3>
@@ -302,35 +303,6 @@ export default function HomePage() {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ── SIMON'S TOWN ────────────────────────────────────── */}
-      <section className="relative py-32 overflow-hidden">
-        <img
-          src="/images/boulders_beach_penguins.jpg"
-          alt="African penguins at Boulders Beach, Simon's Town"
-          className="absolute inset-0 w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-espresso/80 via-espresso/55 to-espresso/15" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-10">
-          <motion.div {...up()} className="max-w-lg">
-            <p className="font-body text-xs tracking-[0.22em] uppercase font-semibold mb-4" style={{ color: '#F5DFA0' }}>
-              Simon's Town, Cape Peninsula
-            </p>
-            <h2 className="font-display text-4xl sm:text-5xl font-bold text-cream leading-tight mb-6">
-              Where the Penguins Live and the Pastries Are Extraordinary.
-            </h2>
-            <p className="font-body text-base leading-relaxed mb-8" style={{ color: 'rgba(255,254,249,0.80)' }}>
-              Walk in from the harbour. Sit by the window. Order the croissant. This is Simon's Town on a good morning.
-            </p>
-            <Link to="/about"
-              className="inline-flex items-center gap-2 font-body text-sm font-semibold hover:text-cream transition-colors group"
-              style={{ color: '#F5DFA0' }}>
-              Our Story
-              <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-            </Link>
-          </motion.div>
         </div>
       </section>
 
