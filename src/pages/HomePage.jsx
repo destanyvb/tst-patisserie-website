@@ -18,16 +18,16 @@ const categories = [
 
 const signature = [
   { name: 'Croissants & Pastries',  sub: 'Laminated by hand each morning',       img: '/images/gallery_croissants.jpg',    to: '/menu',         pos: 'center' },
-  { name: 'Celebration Cakes',      sub: 'Naked, layered, dressed with fruit',    img: '/images/tst_victoria_cake.jpg',     to: '/custom-cakes', pos: 'center' },
+  { name: 'Celebration Cakes',      sub: 'Naked, layered, dressed with fruit',    img: '/images/tst_victoria_cake.jpg',     to: '/custom-cakes', pos: 'top' },
   { name: 'Signature Desserts',     sub: 'Fresh tarts and desserts from the case', img: '/images/tst_fruit_tart.webp',      to: '/menu',         pos: 'center' },
   { name: 'Berry Cupcakes',         sub: 'Seasonal fruit, fresh cream frosting',  img: '/images/tst_cupcakes.jpg',          to: '/menu',         pos: 'center' },
 ]
 
 const gallery = [
-  { img: '/images/tst_catering.webp',          label: 'Catering Spreads'  },
-  { img: '/images/tst_ig_02.jpg',              label: 'High Tea Spread'   },
-  { img: '/images/tst_passionfruit_tart.jpg',  label: 'Passionfruit Tart' },
-  { img: '/images/tst_linzer_cookies.webp',    label: 'Jam Star Cookies'  },
+  { img: '/images/tst_catering.webp',       label: 'Catering Spreads'      },
+  { img: '/images/tst_caramel_tart.webp',   label: 'Caramel Tart'          },
+  { img: '/images/tst_ig_01.jpg',           label: 'Celebration Desserts'  },
+  { img: '/images/tst_linzer_cookies.webp', label: 'Jam Star Cookies'      },
 ]
 
 const reviews = [
@@ -125,10 +125,10 @@ export default function HomePage() {
 
           <motion.div {...up()} className="relative">
             <img
-              src="/images/tst_victoria_sponge.webp"
-              alt="Victoria sponge cake at The Sweetest Thing Patisserie"
+              src="/images/tst_ig_02.jpg"
+              alt="Afternoon high tea spread at The Sweetest Thing Patisserie"
               className="w-full h-[460px] object-cover rounded-3xl shadow-lg"
-              style={{ objectPosition: 'center 20%' }}
+              style={{ objectPosition: 'center 30%' }}
             />
             {/* Soft pastel blue accent square behind photo */}
             <div className="absolute -bottom-5 -left-5 w-36 h-36 rounded-3xl bg-pbluePale border border-pblueMid/50 -z-10" />
@@ -219,8 +219,9 @@ export default function HomePage() {
               From birthdays and baby showers to weddings and anniversaries. Come in and speak to us, or fill in the form and we will get back to you.
             </p>
             <div className="relative rounded-3xl overflow-hidden h-72 shadow-md">
-              <img src="/images/tst_choc_cake.jpg" alt="Custom celebration cake"
-                className="w-full h-full object-cover" />
+              <img src="/images/tst_victoria_sponge.webp" alt="Custom celebration cake"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: 'center top' }} />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/40 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4">
                 <span className="inline-block font-body text-xs font-semibold text-espresso bg-pyellowMid/90 rounded-full px-4 py-2">

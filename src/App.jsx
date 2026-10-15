@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import StickyMobileBar from './components/StickyMobileBar'
+import FloatingContact from './components/FloatingContact'
 import HomePage from './pages/HomePage'
 import MenuPage from './pages/MenuPage'
 import AboutPage from './pages/AboutPage'
@@ -28,6 +29,7 @@ export default function App() {
         </main>
         <Footer />
         <StickyMobileBar />
+        <FloatingContact />
       </div>
     </BrowserRouter>
   )
