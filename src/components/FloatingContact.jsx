@@ -12,18 +12,18 @@ export default function FloatingContact() {
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 1.2, type: 'spring', stiffness: 260, damping: 22 }}
     >
-      {/* Pulse ring */}
-      <span className="absolute inline-flex w-14 h-14 rounded-full opacity-30 animate-ping"
-        style={{ background: '#2C2015' }} />
+      {/* Pulse ring — same yellow as Make Enquiry button */}
+      <span className="absolute inline-flex w-14 h-14 rounded-full opacity-40 animate-ping"
+        style={{ background: '#F5DFA0' }} />
 
       {/* Button */}
       <motion.span
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.93 }}
         className="relative flex items-center justify-center w-14 h-14 rounded-full shadow-xl transition-shadow hover:shadow-2xl cursor-pointer"
-        style={{ background: '#2C2015' }}
+        style={{ background: '#F5DFA0' }}
       >
-        <Phone size={22} strokeWidth={1.8} color="#FFFEF9" />
+        <Phone size={22} strokeWidth={1.8} color="#2C2015" />
       </motion.span>
 
       {/* Tooltip label — appears on hover, left of the button */}

@@ -341,7 +341,7 @@ export default function MenuPage() {
       {/* Footer note */}
       <section className="px-4 sm:px-6 pb-20">
         <div className="max-w-3xl mx-auto">
-          <div className="bg-espresso rounded-2xl p-8 text-center">
+          <div className="rounded-2xl p-8 text-center" style={{ background: '#1B4965' }}>
             <p className="font-script text-3xl text-gold mb-2">
               The menu changes every day.
             </p>
