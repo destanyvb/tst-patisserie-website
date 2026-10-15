@@ -6,13 +6,19 @@ export default function Footer() {
   return (
     <footer className="bg-espresso text-white/80">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
-        {/* Brand — real sign logo */}
+        {/* Brand — CSS oval badge */}
         <div>
-          <img
-            src="/images/tst_logo_oval.jpg"
-            alt="The Sweetest Thing Pâtisserie"
-            className="h-16 w-auto object-contain mb-4 opacity-90"
-          />
+          <div className="relative flex items-center justify-center w-28 h-16 mb-4">
+            <div className="absolute inset-0 rounded-[50%] border-2 border-gold/70" />
+            <div className="absolute inset-[4px] rounded-[50%] border border-gold/30" />
+            <div className="relative z-10 text-center px-3">
+              <div className="font-display text-[9px] font-bold text-cream tracking-wide leading-none">The Sweetest Thing</div>
+              <div className="w-full h-px bg-gold/50 my-0.5" />
+              <div className="font-body text-[7px] font-semibold text-gold tracking-[0.15em] uppercase leading-none">Pâtisserie</div>
+              <div className="w-full h-px bg-gold/50 my-0.5" />
+              <div className="font-body text-[6px] text-cream/60 tracking-wider uppercase leading-none">Simon's Town</div>
+            </div>
+          </div>
           <p className="font-body text-sm leading-relaxed text-cream/70">
             French patisserie and cafe in the heart of Simon's Town. Over 40 items baked from scratch every morning.
           </p>

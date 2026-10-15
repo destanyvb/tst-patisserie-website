@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { Croissant, Cake, Coffee, UtensilsCrossed } from 'lucide-react'
+import { Wheat, Cake, Coffee, UtensilsCrossed } from 'lucide-react'
 
 const up = (delay = 0) => ({
   initial:     { opacity: 0, y: 22 },
@@ -10,9 +10,9 @@ const up = (delay = 0) => ({
 })
 
 const categories = [
-  { Icon: Croissant,       label: 'Pastries & Bakery',      sub: 'Freshly baked daily',  to: '/menu' },
+  { Icon: Wheat,           label: 'Pastries & Bakery',      sub: 'Freshly baked daily',  to: '/menu' },
   { Icon: Cake,            label: 'Cakes & Desserts',        sub: 'Made with love',       to: '/menu' },
-  { Icon: Coffee,          label: 'Coffee & Drinks',          sub: 'Speciality coffee',    to: '/menu' },
+  { Icon: Coffee,          label: 'Coffee & Drinks',         sub: 'Speciality coffee',    to: '/menu' },
   { Icon: UtensilsCrossed, label: 'Breakfast & Light Meals', sub: 'Fresh and seasonal',   to: '/menu' },
 ]
 
@@ -97,10 +97,13 @@ export default function HomePage() {
               <motion.div key={label} {...up(i * 0.08)}>
                 <Link to={to}
                   className="flex flex-col items-center text-center px-6 py-9 group hover:bg-white/50 transition-colors">
-                  <Icon
-                    className="mb-4 transition-colors group-hover:text-gold"
-                    style={{ width: 40, height: 40, strokeWidth: 1.25, color: '#2C2015', opacity: 0.75 }}
-                  />
+                  <div className="mb-5 relative flex items-center justify-center w-16 h-16 rounded-full border border-gold/35 bg-white/60 group-hover:border-gold/70 group-hover:bg-gold/8 transition-all duration-300 shadow-sm">
+                    <div className="absolute inset-[5px] rounded-full border border-gold/15 group-hover:border-gold/30 transition-colors" />
+                    <Icon
+                      className="relative z-10 transition-colors group-hover:text-gold"
+                      style={{ width: 26, height: 26, strokeWidth: 1.2, color: '#2C2015' }}
+                    />
+                  </div>
                   <h3 className="font-body text-[11px] font-bold text-espresso tracking-[0.18em] uppercase mb-1.5 leading-tight">
                     {label}
                   </h3>
@@ -336,7 +339,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div {...up()} className="relative">
             <div className="relative rounded-3xl overflow-hidden h-80 shadow-lg">
-              <img src="/images/tst_ig_logo.webp" alt="The Sweetest Thing Patisserie shopfront, Simon's Town"
+              <img src="/images/boulders_beach_penguins.jpg" alt="African penguins at Boulders Beach near Simon's Town"
                 className="w-full h-full object-cover object-center" />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/60 via-espresso/10 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
