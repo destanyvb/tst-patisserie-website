@@ -8,19 +8,22 @@ export default {
     extend: {
       colors: {
         espresso:   '#2C2015',
-        navy:       '#1A2B45',
-        gold:       '#C8A865',
-        lemon:      '#F5DE3A',
-        lemonLight: '#FEFCE8',
-        lemonMid:   '#FEF08A',
-        skyblue:    '#93C5D8',
-        skyLight:   '#EFF8FD',
-        skyMid:     '#BAE6FD',
-        cream:      '#FFFEF7',
-        parchment:  '#FAF7F2',
         ink:        '#1A1208',
-        muted:      '#5A4D3C',
-        border:     '#E0D0B8',
+        gold:       '#C8A865',
+        /* pastel blue — soft powder, like sea glass */
+        pblue:      '#9EC4D5',
+        pbluePale:  '#EBF6FA',
+        pblueMid:   '#C8E3EE',
+        /* pastel yellow — butter, not neon */
+        pyellow:    '#F5DFA0',
+        pyellowPale:'#FFFBEB',
+        pyellowMid: '#FAE9A0',
+        /* neutrals */
+        sand:       '#F7F1E8',
+        cream:      '#FFFEF9',
+        muted:      '#6B5C45',
+        border:     '#E5D8C8',
+        parchment:  '#FAF7F2',
       },
       fontFamily: {
         display: ['"Playfair Display"', 'Georgia', 'serif'],
