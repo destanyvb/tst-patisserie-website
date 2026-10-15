@@ -28,6 +28,7 @@ export default {
       fontFamily: {
         display: ['"Playfair Display"', 'Georgia', 'serif'],
         body:    ['Lato', 'system-ui', 'sans-serif'],
+        script:  ['"Great Vibes"', 'cursive'],
       },
     },
   },
