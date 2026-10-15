@@ -42,14 +42,15 @@ export default function HomePage() {
 
       {/* ── HERO ────────────────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center overflow-hidden pt-24">
-        {/* Sea view — brighter, more visible */}
+        {/* The actual TST shopfront on St George's Street, Simon's Town */}
         <img
-          src="/images/simons_town_harbour.jpg"
-          alt="Simon's Town harbour"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          src="/images/tst_shopfront.webp"
+          alt="The Sweetest Thing Patisserie, 82 St George's Street, Simon's Town"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ objectPosition: 'center 25%' }}
         />
-        {/* Very soft wash — cream on left, fading to transparent so the sea breathes */}
-        <div className="absolute inset-0 bg-gradient-to-r from-cream/90 via-cream/60 to-cream/10" />
+        {/* Cream wash left so text stays readable; right side reveals the shopfront */}
+        <div className="absolute inset-0 bg-gradient-to-r from-cream/92 via-cream/65 to-cream/15" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 w-full pb-20 pt-8">
           <div className="max-w-xl">
@@ -124,9 +125,10 @@ export default function HomePage() {
 
           <motion.div {...up()} className="relative">
             <img
-              src="/images/gallery_croissants.jpg"
-              alt="Freshly baked croissants at The Sweetest Thing"
+              src="/images/tst_victoria_sponge.webp"
+              alt="Victoria sponge cake at The Sweetest Thing Patisserie"
               className="w-full h-[460px] object-cover rounded-3xl shadow-lg"
+              style={{ objectPosition: 'center 20%' }}
             />
             {/* Soft pastel blue accent square behind photo */}
             <div className="absolute -bottom-5 -left-5 w-36 h-36 rounded-3xl bg-pbluePale border border-pblueMid/50 -z-10" />
@@ -312,7 +314,8 @@ export default function HomePage() {
           <motion.div {...up()} className="relative">
             <div className="relative rounded-3xl overflow-hidden h-80 shadow-lg">
               <img src="/images/boulders_beach_penguins.jpg" alt="African penguins at Boulders Beach near Simon's Town"
-                className="w-full h-full object-cover object-center" />
+                className="w-full h-full object-cover"
+                style={{ objectPosition: 'center 85%' }} />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/60 via-espresso/10 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
                 <p className="font-display text-xl font-bold text-cream leading-snug drop-shadow-lg">
