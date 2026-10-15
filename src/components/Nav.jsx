@@ -41,28 +41,13 @@ export default function Nav() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 md:h-20">
-        {/* Oval badge logo */}
-        <Link to="/" className="flex-shrink-0 group">
-          <div className="relative flex items-center justify-center w-28 h-16 md:w-32 md:h-[72px]">
-            {/* Oval border */}
-            <div className="absolute inset-0 rounded-[50%] border-2 border-gold bg-white group-hover:bg-amber-50 transition-colors" />
-            {/* Inner oval */}
-            <div className="absolute inset-[4px] rounded-[50%] border border-gold/40" />
-            {/* Text stack */}
-            <div className="relative z-10 text-center px-3">
-              <div className="font-display text-[9px] md:text-[10px] font-bold text-espresso tracking-wide leading-none">
-                The Sweetest Thing
-              </div>
-              <div className="w-full h-px bg-gold/60 my-0.5" />
-              <div className="font-body text-[7px] md:text-[8px] font-semibold text-gold tracking-[0.15em] uppercase leading-none">
-                Patisserie
-              </div>
-              <div className="w-full h-px bg-gold/60 my-0.5" />
-              <div className="font-body text-[6px] md:text-[7px] text-muted tracking-wider uppercase leading-none">
-                Simon's Town
-              </div>
-            </div>
-          </div>
+        {/* Real oval sign logo */}
+        <Link to="/" className="flex-shrink-0">
+          <img
+            src="/images/tst_logo_oval.jpg"
+            alt="The Sweetest Thing Pâtisserie"
+            className="h-14 md:h-[68px] w-auto object-contain drop-shadow-sm"
+          />
         </Link>
 
         {/* Desktop nav */}

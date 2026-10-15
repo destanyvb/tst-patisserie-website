@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { Croissant, Cake, Coffee, UtensilsCrossed } from 'lucide-react'
 
 const up = (delay = 0) => ({
   initial:     { opacity: 0, y: 22 },
@@ -9,24 +10,24 @@ const up = (delay = 0) => ({
 })
 
 const categories = [
-  { icon: '🥐', label: 'Pastries & Bakery',      sub: 'Freshly baked daily',  to: '/menu' },
-  { icon: '🎂', label: 'Cakes & Desserts',        sub: 'Made with love',       to: '/menu' },
-  { icon: '☕', label: 'Coffee & Drinks',          sub: 'Speciality coffee',    to: '/menu' },
-  { icon: '🍳', label: 'Breakfast & Light Meals', sub: 'Fresh and seasonal',   to: '/menu' },
+  { Icon: Croissant,       label: 'Pastries & Bakery',      sub: 'Freshly baked daily',  to: '/menu' },
+  { Icon: Cake,            label: 'Cakes & Desserts',        sub: 'Made with love',       to: '/menu' },
+  { Icon: Coffee,          label: 'Coffee & Drinks',          sub: 'Speciality coffee',    to: '/menu' },
+  { Icon: UtensilsCrossed, label: 'Breakfast & Light Meals', sub: 'Fresh and seasonal',   to: '/menu' },
 ]
 
 const signature = [
-  { name: 'Croissants & Pastries',  sub: 'Laminated by hand each morning',    img: '/images/gallery_croissants.jpg',  to: '/menu' },
-  { name: 'Berry Cupcakes',         sub: 'Seasonal fruit and fresh cream',     img: '/images/tst_cupcakes.jpg',        to: '/menu' },
-  { name: 'Signature Cakes',        sub: 'Made to order or from the case',     img: '/images/tst_ig_01.jpg',           to: '/custom-cakes' },
-  { name: 'Chocolate Specialities', sub: 'Indulgent, handcrafted, and worth it', img: '/images/tst_choc_cake.jpg',    to: '/menu' },
+  { name: 'Croissants & Pastries',  sub: 'Laminated by hand each morning',       img: '/images/gallery_croissants.jpg',   to: '/menu'        },
+  { name: 'Celebration Cakes',      sub: 'Naked, layered, dressed with fruit',    img: '/images/tst_victoria_cake.jpg',    to: '/custom-cakes'},
+  { name: 'Signature Desserts',     sub: 'Made to order or from the case',        img: '/images/tst_ig_01.jpg',            to: '/custom-cakes'},
+  { name: 'Berry Cupcakes',         sub: 'Seasonal fruit, fresh cream frosting',  img: '/images/tst_cupcakes.jpg',         to: '/menu'        },
 ]
 
 const gallery = [
-  { img: '/images/tst_cupcakes.jpg',            label: 'Berry Cupcakes'  },
-  { img: '/images/tst_choc_cake.jpg',           label: 'Chocolate Cakes' },
-  { img: '/images/gallery_custard_tarts.jpg',   label: 'Pasteis de Nata' },
-  { img: '/images/tst_ig_02.jpg',               label: 'High Tea Spread' },
+  { img: '/images/tst_victoria_cake.jpg',       label: 'Celebration Cakes' },
+  { img: '/images/tst_cupcakes.jpg',             label: 'Berry Cupcakes'    },
+  { img: '/images/gallery_custard_tarts.jpg',    label: 'Pasteis de Nata'   },
+  { img: '/images/tst_ig_02.jpg',                label: 'High Tea Spread'   },
 ]
 
 const reviews = [
@@ -88,22 +89,29 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-cream to-transparent" />
       </section>
 
-      {/* ── CATEGORY STRIPS ─────────────────────────────────── */}
-      <section className="bg-pbluePale border-y border-pblueMid/40 py-10 px-4 sm:px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
-          {categories.map((cat, i) => (
-            <motion.div key={cat.label} {...up(i * 0.08)}>
-              <Link to={cat.to}
-                className="flex flex-col items-center text-center p-5 rounded-2xl bg-white/80 border border-pblueMid/30 hover:border-pblue hover:shadow-sm transition-all group">
-                <span className="text-3xl mb-2">{cat.icon}</span>
-                <h3 className="font-display text-sm font-semibold text-espresso mb-1 group-hover:text-gold transition-colors leading-tight">
-                  {cat.label}
-                </h3>
-                <p className="font-body text-xs text-muted mb-2">{cat.sub}</p>
-                <span className="font-body text-xs text-pblue font-semibold">View Menu &rarr;</span>
-              </Link>
-            </motion.div>
-          ))}
+      {/* ── CATEGORY STRIP ──────────────────────────────────── */}
+      <section className="bg-sand border-y border-border py-2">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-y-2 md:divide-y-0 md:divide-x-2 divide-border/60">
+            {categories.map(({ Icon, label, sub, to }, i) => (
+              <motion.div key={label} {...up(i * 0.08)}>
+                <Link to={to}
+                  className="flex flex-col items-center text-center px-6 py-9 group hover:bg-white/50 transition-colors">
+                  <Icon
+                    className="mb-4 transition-colors group-hover:text-gold"
+                    style={{ width: 40, height: 40, strokeWidth: 1.25, color: '#2C2015', opacity: 0.75 }}
+                  />
+                  <h3 className="font-body text-[11px] font-bold text-espresso tracking-[0.18em] uppercase mb-1.5 leading-tight">
+                    {label}
+                  </h3>
+                  <p className="font-body text-xs text-muted mb-4 leading-snug">{sub}</p>
+                  <span className="font-body text-[10px] font-semibold tracking-[0.14em] uppercase transition-colors group-hover:text-gold" style={{ color: '#9EC4D5' }}>
+                    View Menu &rarr;
+                  </span>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
