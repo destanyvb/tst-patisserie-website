@@ -16,17 +16,17 @@ const categories = [
 ]
 
 const signature = [
-  { name: 'Croissants & Pastries', sub: 'Laminated by hand each morning',    img: '/images/gallery_croissants.jpg',    to: '/menu' },
-  { name: 'Signature Cakes',       sub: 'Made to order or from the case',    img: '/images/tst_ig_01.jpg',             to: '/custom-cakes' },
-  { name: 'Speciality Coffee',     sub: 'The perfect companion',             img: '/images/gallery_coffee.jpg',        to: '/menu' },
-  { name: 'Breakfast & Brunch',    sub: 'Light, fresh, and seasonal',        img: '/images/gallery_baked_goods.jpg',   to: '/menu' },
+  { name: 'Croissants & Pastries',  sub: 'Laminated by hand each morning',    img: '/images/gallery_croissants.jpg',  to: '/menu' },
+  { name: 'Berry Cupcakes',         sub: 'Seasonal fruit and fresh cream',     img: '/images/tst_cupcakes.jpg',        to: '/menu' },
+  { name: 'Signature Cakes',        sub: 'Made to order or from the case',     img: '/images/tst_ig_01.jpg',           to: '/custom-cakes' },
+  { name: 'Chocolate Specialities', sub: 'Indulgent, handcrafted, and worth it', img: '/images/tst_choc_cake.jpg',    to: '/menu' },
 ]
 
 const gallery = [
-  { img: '/images/tst_ig_01.jpg',              label: 'Custom Cakes'   },
-  { img: '/images/tst_ig_02.jpg',              label: 'Fresh Pastries' },
-  { img: '/images/gallery_custard_tarts.jpg',  label: 'Pasteis de Nata'},
-  { img: '/images/gallery_tarts.jpg',          label: 'Daily Tartlets' },
+  { img: '/images/tst_cupcakes.jpg',            label: 'Berry Cupcakes'  },
+  { img: '/images/tst_choc_cake.jpg',           label: 'Chocolate Cakes' },
+  { img: '/images/gallery_custard_tarts.jpg',   label: 'Pasteis de Nata' },
+  { img: '/images/tst_ig_02.jpg',               label: 'High Tea Spread' },
 ]
 
 const reviews = [
@@ -205,7 +205,7 @@ export default function HomePage() {
               From birthdays and baby showers to weddings and anniversaries. Come in and speak to us, or fill in the form and we will get back to you.
             </p>
             <div className="relative rounded-3xl overflow-hidden h-72 shadow-md">
-              <img src="/images/tst_ig_01.jpg" alt="Custom celebration cake"
+              <img src="/images/tst_choc_cake.jpg" alt="Custom celebration cake"
                 className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/40 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4">
@@ -294,16 +294,45 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── SIMON'S TOWN ────────────────────────────────────── */}
+      <section className="relative py-32 overflow-hidden">
+        <img
+          src="/images/boulders_beach_penguins.jpg"
+          alt="African penguins at Boulders Beach, Simon's Town"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-espresso/80 via-espresso/55 to-espresso/15" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-10">
+          <motion.div {...up()} className="max-w-lg">
+            <p className="font-body text-xs tracking-[0.22em] uppercase font-semibold mb-4" style={{ color: '#F5DFA0' }}>
+              Simon's Town, Cape Peninsula
+            </p>
+            <h2 className="font-display text-4xl sm:text-5xl font-bold text-cream leading-tight mb-6">
+              Where the Penguins Live and the Pastries Are Extraordinary.
+            </h2>
+            <p className="font-body text-base leading-relaxed mb-8" style={{ color: 'rgba(255,254,249,0.80)' }}>
+              Walk in from the harbour. Sit by the window. Order the croissant. This is Simon's Town on a good morning.
+            </p>
+            <Link to="/about"
+              className="inline-flex items-center gap-2 font-body text-sm font-semibold hover:text-cream transition-colors group"
+              style={{ color: '#F5DFA0' }}>
+              Our Story
+              <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
       {/* ── FIND US ─────────────────────────────────────────── */}
       <section className="py-28 px-4 sm:px-6 bg-pbluePale">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div {...up()} className="relative">
             <div className="relative rounded-3xl overflow-hidden h-80 shadow-lg">
-              <img src="/images/coastal_view.jpg" alt="Simon's Town"
-                className="w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-espresso/50 via-espresso/10 to-transparent" />
-              <div className="absolute inset-0 flex items-center justify-center px-8 text-center">
-                <p className="font-display text-2xl font-bold text-white leading-snug drop-shadow-lg">
+              <img src="/images/tst_ig_logo.webp" alt="The Sweetest Thing Patisserie shopfront, Simon's Town"
+                className="w-full h-full object-cover object-center" />
+              <div className="absolute inset-0 bg-gradient-to-t from-espresso/60 via-espresso/10 to-transparent" />
+              <div className="absolute bottom-5 left-5 right-5">
+                <p className="font-display text-xl font-bold text-cream leading-snug drop-shadow-lg">
                   A Little Café with a Big Heart.
                 </p>
               </div>
