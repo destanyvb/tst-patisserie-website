@@ -41,17 +41,22 @@ export default function Nav() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 md:h-20">
-        {/* Oval badge logo — transparent background */}
+        {/* Oval badge logo — striped border replicating the original hanging sign */}
         <Link to="/" className="flex-shrink-0 group">
-          <div className="relative flex items-center justify-center w-28 h-16 md:w-32 md:h-[72px]">
-            <div className="absolute inset-0 rounded-[50%] border-2 border-gold transition-colors group-hover:border-gold/70" />
-            <div className="absolute inset-[4px] rounded-[50%] border border-gold/40" />
-            <div className="relative z-10 text-center px-3">
-              <div className="font-display text-[9px] md:text-[10px] font-bold text-espresso tracking-wide leading-none">The Sweetest Thing</div>
-              <div className="w-full h-px bg-gold/60 my-0.5" />
-              <div className="font-body text-[7px] md:text-[8px] font-semibold text-gold tracking-[0.15em] uppercase leading-none">Pâtisserie</div>
-              <div className="w-full h-px bg-gold/60 my-0.5" />
-              <div className="font-body text-[6px] md:text-[7px] text-muted tracking-wider uppercase leading-none">Simon's Town</div>
+          <div className="relative flex items-center justify-center w-[120px] h-[68px] md:w-[136px] md:h-[76px]">
+            {/* Alternating gold / light-yellow bands — outer to inner */}
+            <div className="absolute inset-0 rounded-[50%]" style={{ background: '#C8A865' }} />
+            <div className="absolute inset-[3px] rounded-[50%]" style={{ background: '#FAE9A0' }} />
+            <div className="absolute inset-[5px] rounded-[50%]" style={{ background: '#C8A865' }} />
+            <div className="absolute inset-[7px] rounded-[50%]" style={{ background: '#FAE9A0' }} />
+            <div className="absolute inset-[9px] rounded-[50%]" style={{ background: '#C8A865' }} />
+            {/* Cream content oval */}
+            <div className="absolute inset-[11px] rounded-[50%] transition-opacity group-hover:opacity-95" style={{ background: '#FAF7F2' }} />
+            {/* Logo text */}
+            <div className="relative z-10 text-center px-3 leading-none">
+              <div className="font-logo text-[8px] md:text-[9px] text-espresso leading-none">The</div>
+              <div className="font-logo text-[13px] md:text-[15px] text-espresso leading-tight">Sweetest Thing</div>
+              <div className="font-logo text-[11px] md:text-[13px] text-espresso leading-none">Pâtisserie</div>
             </div>
           </div>
         </Link>

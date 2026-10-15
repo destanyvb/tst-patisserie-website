@@ -29,6 +29,7 @@ export default {
         display: ['"Playfair Display"', 'Georgia', 'serif'],
         body:    ['Lato', 'system-ui', 'sans-serif'],
         script:  ['"Great Vibes"', 'cursive'],
+        logo:    ['"Parisienne"', 'cursive'],
       },
     },
   },

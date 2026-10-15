@@ -18,7 +18,7 @@ const categories = [
 
 const signature = [
   { name: 'Croissants & Pastries',  sub: 'Laminated by hand each morning',       img: '/images/gallery_croissants.jpg',    to: '/menu',         pos: 'center' },
-  { name: 'Celebration Cakes',      sub: 'Naked, layered, dressed with fruit',    img: '/images/tst_victoria_cake.jpg',     to: '/custom-cakes', pos: 'top' },
+  { name: 'Celebration Cakes',      sub: 'Naked, layered, dressed with fruit',    img: '/images/tst_victoria_cake.jpg',     to: '/custom-cakes', pos: 'center 55%' },
   { name: 'Signature Desserts',     sub: 'Fresh tarts and desserts from the case', img: '/images/tst_fruit_tart.webp',      to: '/menu',         pos: 'center' },
   { name: 'Berry Cupcakes',         sub: 'Seasonal fruit, fresh cream frosting',  img: '/images/tst_cupcakes.jpg',          to: '/menu',         pos: 'center' },
 ]
@@ -221,7 +221,7 @@ export default function HomePage() {
             <div className="relative rounded-3xl overflow-hidden h-72 shadow-md">
               <img src="/images/tst_victoria_sponge.webp" alt="Custom celebration cake"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: 'center top' }} />
+                style={{ objectPosition: 'center 45%' }} />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/40 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4">
                 <span className="inline-block font-body text-xs font-semibold text-espresso bg-pyellowMid/90 rounded-full px-4 py-2">
