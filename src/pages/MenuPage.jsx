@@ -223,7 +223,7 @@ export default function MenuPage() {
     <div className="pt-16 md:pt-20 bg-cream min-h-screen">
 
       {/* Page header */}
-      <section className="bg-parchment border-b border-border py-14 px-4 sm:px-6 text-center">
+      <section className="bg-parchment border-b border-border pt-14 pb-0 px-4 sm:px-6 text-center overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
@@ -235,10 +235,38 @@ export default function MenuPage() {
           <h1 className="font-script text-6xl sm:text-7xl text-espresso leading-tight mb-4">
             Our Menu
           </h1>
-          <p className="font-body text-sm text-muted max-w-md mx-auto leading-relaxed">
+          <p className="font-body text-sm text-muted max-w-md mx-auto leading-relaxed mb-10">
             The selection rotates daily. Come in and see what is on the counter.
             Prices may vary slightly in store.
           </p>
+        </motion.div>
+
+        {/* Food photo strip */}
+        <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="flex gap-3 justify-center max-w-3xl mx-auto"
+        >
+          {[
+            { src: '/images/gallery_croissants.jpg',    alt: 'Fresh croissants',  pos: 'center 40%' },
+            { src: '/images/gallery_custard_tarts.jpg', alt: 'Custard tarts',     pos: 'center 35%' },
+            { src: '/images/tst_caramel_tart.webp',     alt: 'Caramel tart',      pos: 'center'     },
+            { src: '/images/tst_cupcakes.jpg',          alt: 'Berry cupcakes',    pos: 'center'     },
+          ].map((img) => (
+            <div
+              key={img.src}
+              className="flex-1 overflow-hidden rounded-t-2xl shadow-sm"
+              style={{ height: 140 }}
+            >
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-full h-full object-cover"
+                style={{ objectPosition: img.pos }}
+              />
+            </div>
+          ))}
         </motion.div>
       </section>
 

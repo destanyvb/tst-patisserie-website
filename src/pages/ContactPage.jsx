@@ -141,7 +141,7 @@ export default function ContactPage() {
       {/* Getting here note */}
       <section className="pb-20 px-4 sm:px-6 mb-16 md:mb-0">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gold/10 border border-gold/30 rounded-2xl p-8">
+          <div className="rounded-2xl p-8" style={{ background: '#D8DCBA', border: '1px solid rgba(107,114,69,0.30)' }}>
             <h3 className="font-display text-xl font-semibold text-espresso mb-3">
               How to find us
             </h3>

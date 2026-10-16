@@ -49,8 +49,11 @@ export default function HomePage() {
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: 'center center' }}
         />
-        {/* Cream wash left so text stays readable; right side reveals the shopfront */}
-        <div className="absolute inset-0 bg-gradient-to-r from-cream/92 via-cream/65 to-cream/15" />
+        {/* Cream panel: solid on far-left, fades into photo by mid-page */}
+        <div
+          className="absolute inset-0"
+          style={{ background: 'linear-gradient(to right, rgba(250,247,242,0.97) 0%, rgba(250,247,242,0.95) 42%, rgba(250,247,242,0.55) 62%, rgba(250,247,242,0.00) 100%)' }}
+        />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 w-full pb-20 pt-8">
           <div className="max-w-xl">
@@ -125,10 +128,10 @@ export default function HomePage() {
 
           <motion.div {...up()} className="relative">
             <img
-              src="/images/tst_ig_02.jpg"
+              src="/images/tst_afternoon_tea.jpg"
               alt="Afternoon high tea spread at The Sweetest Thing Patisserie"
               className="w-full h-[460px] object-cover rounded-3xl shadow-lg"
-              style={{ objectPosition: 'center 30%' }}
+              style={{ objectPosition: 'center 40%' }}
             />
             {/* Soft pastel blue accent square behind photo */}
             <div className="absolute -bottom-5 -left-5 w-36 h-36 rounded-3xl bg-pbluePale border border-pblueMid/50 -z-10" />
@@ -204,10 +207,10 @@ export default function HomePage() {
 
       {/* ── CUSTOM CAKE ENQUIRY ──────────────────────────────── */}
       <section className="py-28 px-4 sm:px-6" style={{ background: '#FFFBEB' }}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
 
-          {/* Left: copy */}
-          <motion.div {...up()}>
+          {/* Left: copy + image fills remaining height */}
+          <motion.div {...up()} className="flex flex-col">
             <p className="font-body text-xs tracking-[0.22em] uppercase text-gold font-semibold mb-4">
               Custom Cake Studio
             </p>
@@ -218,10 +221,10 @@ export default function HomePage() {
             <p className="font-body text-base text-muted leading-relaxed mb-8">
               From birthdays and baby showers to weddings and anniversaries. Come in and speak to us, or fill in the form and we will get back to you.
             </p>
-            <div className="relative rounded-3xl overflow-hidden h-72 shadow-md">
+            <div className="relative rounded-3xl overflow-hidden flex-1 min-h-[340px] shadow-md">
               <img src="/images/tst_victoria_sponge.webp" alt="Custom celebration cake"
-                className="w-full h-full object-cover"
-                style={{ objectPosition: 'center 45%' }} />
+                className="absolute inset-0 w-full h-full object-cover"
+                style={{ objectPosition: 'center 30%' }} />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/40 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4">
                 <span className="inline-block font-body text-xs font-semibold text-espresso bg-pyellowMid/90 rounded-full px-4 py-2">

@@ -52,35 +52,14 @@ export default function AboutPage() {
 
       {/* Story */}
       <section className="py-20 px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-14 items-start">
-          {/* Stats column */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0 }}
-            className="lg:col-span-2"
-          >
-            <div className="bg-parchment rounded-2xl border border-border p-8 space-y-8">
-              {stats.map(({ value, label }) => (
-                <div key={label}>
-                  <p className="font-display text-4xl font-bold text-gold">{value}</p>
-                  <p className="font-body text-sm text-muted mt-1">{label}</p>
-                </div>
-              ))}
-              <div className="pt-4 border-t border-border">
-                <p className="font-body text-xs text-muted/60 italic">
-                  #13 in Simon's Town on TripAdvisor
-                </p>
-              </div>
-            </div>
-          </motion.div>
+        <div className="max-w-4xl mx-auto">
 
-          {/* Story copy */}
+          {/* Story copy — full width */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0 }}
-            className="lg:col-span-3 space-y-5 font-body text-base text-muted leading-relaxed"
+            className="space-y-5 font-body text-base text-muted leading-relaxed mb-14"
           >
             <p>
               Doreen Alcock opened The Sweetest Thing in 2005. She trained as a patissier and spent years learning to do one thing properly: bake from scratch, every day, without compromise.
@@ -95,6 +74,30 @@ export default function AboutPage() {
               There is no frozen pastry here. No microwave. Just a kitchen, real ingredients, and people who know what they are doing.
             </p>
           </motion.div>
+
+          {/* Stats strip — horizontal row at the bottom */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0 }}
+            transition={{ delay: 0.15 }}
+            className="bg-parchment rounded-2xl border border-border overflow-hidden"
+          >
+            <div className="grid grid-cols-2 sm:grid-cols-4 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-border/60">
+              {stats.map(({ value, label }) => (
+                <div key={label} className="text-center py-7 px-4">
+                  <p className="font-display text-3xl font-bold text-gold">{value}</p>
+                  <p className="font-body text-xs text-muted mt-1">{label}</p>
+                </div>
+              ))}
+            </div>
+            <div className="text-center border-t border-border py-3">
+              <p className="font-body text-xs text-muted/60 italic">
+                #13 in Simon's Town on TripAdvisor
+              </p>
+            </div>
+          </motion.div>
+
         </div>
       </section>
 
