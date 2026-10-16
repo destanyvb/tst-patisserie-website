@@ -17,10 +17,10 @@ const categories = [
 ]
 
 const signature = [
-  { name: 'Croissants & Pastries',  sub: 'Laminated by hand each morning',       img: '/images/gallery_croissants.jpg',    to: '/menu',         pos: 'center' },
-  { name: 'Celebration Cakes',      sub: 'Naked, layered, dressed with fruit',    img: '/images/tst_victoria_cake.jpg',     to: '/custom-cakes', pos: 'center 75%' },
+  { name: 'Pastries & Savouries',   sub: 'Fresh from the counter every morning',  img: '/images/tst_catering.webp',         to: '/menu',         pos: 'center 55%' },
+  { name: 'Celebration Cakes',      sub: 'Naked, layered, dressed with fruit',    img: '/images/tst_victoria_cake.jpg',     to: '/custom-cakes', pos: 'center 88%' },
   { name: 'Signature Desserts',     sub: 'Fresh tarts and desserts from the case', img: '/images/tst_fruit_tart.webp',      to: '/menu',         pos: 'center' },
-  { name: 'Berry Cupcakes',         sub: 'Seasonal fruit, fresh cream frosting',  img: '/images/tst_cupcakes.jpg',          to: '/menu',         pos: 'center' },
+  { name: 'Passionfruit Cheesecake', sub: 'Baked fresh, topped with passionfruit', img: '/images/tst_passionfruit_tart.jpg', to: '/menu',        pos: 'center 35%' },
 ]
 
 const gallery = [
