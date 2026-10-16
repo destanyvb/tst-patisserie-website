@@ -26,9 +26,10 @@ export default function CustomCakesPage() {
       {/* Hero */}
       <section className="relative py-32 px-4 sm:px-6 overflow-hidden">
         <img
-          src="/images/hero.jpg"
+          src="/images/tst_naked_cake.jpg"
           alt="Custom celebration cake from The Sweetest Thing Patisserie"
           className="absolute inset-0 w-full h-full object-cover"
+          style={{ objectPosition: 'center 30%' }}
         />
         <div className="absolute inset-0 bg-espresso/65" />
         <div className="relative z-10 max-w-3xl mx-auto text-center">

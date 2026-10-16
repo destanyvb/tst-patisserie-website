@@ -1,18 +1,22 @@
 import { motion } from 'framer-motion'
 
 const photos = [
-  { src: '/images/tst_shop_shelf.webp',      alt: 'The Sweetest Thing shop display shelf',              caption: 'The shop, 82 St George\'s Street'          },
-  { src: '/images/gallery_croissants.jpg',   alt: 'Freshly baked butter croissants',                    caption: 'Butter croissants, laminated by hand'      },
-  { src: '/images/tst_fruit_tart.webp',      alt: 'Seasonal fruit tart with strawberries and kiwi',     caption: 'Seasonal fruit tart'                       },
-  { src: '/images/tst_victoria_cake.jpg',    alt: 'Naked celebration cake dressed with figs and berries', caption: 'Celebration cake, dressed with fresh fruit' },
-  { src: '/images/gallery_coffee.jpg',       alt: 'Coffee at The Sweetest Thing Patisserie',            caption: 'Freshly brewed coffee'                     },
-  { src: '/images/tst_cupcakes.jpg',         alt: 'Berry cupcakes with fresh strawberry garnish',       caption: 'Berry cupcakes, made that morning'         },
-  { src: '/images/tst_caramel_tart.webp',    alt: 'Caramel tart sliced on a stand',                     caption: 'Caramel tart, baked fresh daily'           },
-  { src: '/images/tst_ig_02.jpg',            alt: 'High tea spread with macarons and pastries',         caption: 'High tea and special spreads'              },
-  { src: '/images/tst_catering.webp',        alt: 'Catering display with tiered pastry stand',          caption: 'Events and catering'                       },
-  { src: '/images/tst_brownies.jpg',         alt: 'Chocolate walnut brownies stacked',                  caption: 'Chocolate brownies with walnuts'           },
-  { src: '/images/tst_passionfruit_tart.jpg', alt: 'Passionfruit cheesecake tart',                      caption: 'Passionfruit tart'                         },
-  { src: '/images/tst_linzer_cookies.webp',  alt: 'Jam star linzer cookies fresh from the oven',        caption: 'Jam star cookies'                          },
+  { src: '/images/tst_shop_shelf.webp',            alt: 'The Sweetest Thing shop display shelf',                caption: 'The shop, 82 St George\'s Street'             },
+  { src: '/images/gallery_croissants.jpg',         alt: 'Freshly baked butter croissants',                      caption: 'Butter croissants, laminated by hand'         },
+  { src: '/images/tst_fruit_tart.webp',            alt: 'Seasonal fruit tart with strawberries and kiwi',       caption: 'Seasonal fruit tart'                          },
+  { src: '/images/tst_naked_cake.jpg',             alt: 'Naked celebration cake dressed with figs and berries',  caption: 'Celebration cake, dressed with fresh fruit'   },
+  { src: '/images/gallery_coffee.jpg',             alt: 'Coffee at The Sweetest Thing Patisserie',              caption: 'Freshly brewed coffee'                        },
+  { src: '/images/tst_strawberry_cupcakes.jpg',    alt: 'Strawberry cupcakes on a cake stand',                  caption: 'Strawberry cupcakes, baked fresh'             },
+  { src: '/images/tst_caramel_tart.webp',          alt: 'Caramel tart sliced on a stand',                       caption: 'Caramel tart, baked fresh daily'              },
+  { src: '/images/tst_afternoon_tea.jpg',          alt: 'High tea spread with macarons and pastries',           caption: 'High tea and special spreads'                 },
+  { src: '/images/tst_catering_display.webp',      alt: 'Catering display with tiered stand of tarts and brownies', caption: 'Events and catering'                    },
+  { src: '/images/tst_choc_dome.webp',             alt: 'Chocolate dome dessert with cream topping',            caption: 'Signature chocolate dome'                     },
+  { src: '/images/tst_passionfruit_tart.jpg',      alt: 'Passionfruit cheesecake tart',                         caption: 'Passionfruit tart'                            },
+  { src: '/images/tst_linzer_cookies.webp',        alt: 'Jam star linzer cookies fresh from the oven',          caption: 'Jam star cookies'                             },
+  { src: '/images/tst_walnut_brownies.jpg',        alt: 'Stacked walnut brownies with pomegranate seeds',       caption: 'Walnut brownies'                              },
+  { src: '/images/tst_cupcakes.jpg',               alt: 'Berry cupcakes with fresh strawberry garnish',         caption: 'Berry cupcakes, made that morning'            },
+  { src: '/images/tst_catering.webp',              alt: 'Pastry counter display',                               caption: 'Fresh from the counter every morning'         },
+  { src: '/images/tst_victoria_cake.jpg',          alt: 'Layered Victoria sponge with berries',                 caption: 'Victoria sponge'                              },
 ]
 
 export default function GalleryPage() {

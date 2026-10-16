@@ -41,21 +41,23 @@ export default function Nav() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 md:h-20">
-        {/* Oval badge logo — striped border replicating the original hanging sign */}
+        {/* Oval badge logo — replicating the original hanging sign */}
         <Link to="/" className="flex-shrink-0 group">
-          <div className="relative flex items-center justify-center w-[120px] h-[68px] md:w-[136px] md:h-[76px]">
-            {/* Outer oval — vertical gold/light-yellow stripes matching the original hanging sign */}
+          <div className="relative flex items-center justify-center w-[128px] h-[74px] md:w-[148px] md:h-[86px]">
+            {/* Striped outer ring — alternating gold and pale cream, matching the sign's border */}
             <div
               className="absolute inset-0 rounded-[50%]"
-              style={{ background: 'repeating-linear-gradient(90deg, #C8A865 0px, #C8A865 4px, #FAE9A0 4px, #FAE9A0 8px)' }}
+              style={{ background: 'repeating-linear-gradient(90deg, #C9A040 0px, #C9A040 5px, #F7E88A 5px, #F7E88A 10px)' }}
             />
-            {/* Cream content oval */}
-            <div className="absolute inset-[9px] rounded-[50%] transition-opacity group-hover:opacity-95" style={{ background: '#FAF7F2' }} />
-            {/* Logo text */}
-            <div className="relative z-10 text-center px-3 leading-none">
-              <div className="font-logo text-[8px] md:text-[9px] text-espresso leading-none">The</div>
-              <div className="font-logo text-[13px] md:text-[15px] text-espresso leading-tight">Sweetest Thing</div>
-              <div className="font-logo text-[11px] md:text-[13px] text-espresso leading-none">Pâtisserie</div>
+            {/* Thin dark inner ring — creates separation between stripes and content */}
+            <div className="absolute inset-[8px] rounded-[50%]" style={{ background: '#B8902E' }} />
+            {/* White interior of the oval */}
+            <div className="absolute inset-[10px] rounded-[50%] group-hover:opacity-95 transition-opacity" style={{ background: '#FFFEF8' }} />
+            {/* Text — mirroring the sign: small "The", large "Sweetest Thing", medium "Pâtisserie" */}
+            <div className="relative z-10 text-center leading-none px-3">
+              <div className="font-logo text-[9px] md:text-[10.5px] text-espresso leading-none">The</div>
+              <div className="font-logo text-[15px] md:text-[17px] text-espresso leading-snug -mt-px">Sweetest Thing</div>
+              <div className="font-logo text-[12px] md:text-[14px] text-espresso leading-none -mt-px">Pâtisserie</div>
             </div>
           </div>
         </Link>
