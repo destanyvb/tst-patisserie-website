@@ -49,40 +49,39 @@ export default function HomePage() {
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: 'center center' }}
         />
-        {/* Cream panel: solid on far-left, fades into photo by mid-page */}
+        {/* Soft radial glow centred behind the text — photo visible at edges and right */}
         <div
           className="absolute inset-0"
-          style={{ background: 'linear-gradient(to right, rgba(250,247,242,0.97) 0%, rgba(250,247,242,0.95) 42%, rgba(250,247,242,0.55) 62%, rgba(250,247,242,0.00) 100%)' }}
+          style={{ background: 'radial-gradient(ellipse 58% 78% at 28% 50%, rgba(250,247,242,0.93) 0%, rgba(250,247,242,0.78) 30%, rgba(250,247,242,0.40) 58%, rgba(250,247,242,0.00) 82%)' }}
         />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 w-full pb-20 pt-8">
-          <div className="max-w-xl">
+          <div className="max-w-2xl">
             <motion.div
               initial={{ opacity: 0, y: 28 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9 }}
             >
-              <p className="font-body text-[11px] tracking-[0.28em] uppercase text-muted mb-5">
-                Simon's Town &nbsp;·&nbsp; Patisserie &nbsp;·&nbsp; Café
+              <p className="font-body text-[10px] tracking-[0.34em] uppercase text-espresso/55 mb-3">
+                Simon's Town
               </p>
-              <h1 className="font-display text-[3.6rem] sm:text-7xl font-bold text-espresso leading-[1.05] mb-6">
-                Freshly Baked.
-                <br />
-                <em className="font-display not-italic" style={{ color: '#C8A865' }}>
-                  Lovingly Made.
-                </em>
+              <h1 className="font-display text-[3.2rem] sm:text-[4.8rem] lg:text-[5.8rem] font-bold text-espresso leading-[1.0] uppercase tracking-[0.02em] mb-1">
+                The Sweetest Thing
               </h1>
-              <p className="font-body text-lg text-muted leading-relaxed mb-10 max-w-sm">
-                Artisan pastries, handcrafted cakes, wholesome meals and exceptional coffee — all with a view.
+              <p className="font-script text-3xl sm:text-4xl text-espresso mb-7" style={{ letterSpacing: '0.01em' }}>
+                Pâtisserie &nbsp;·&nbsp; Bakery &nbsp;·&nbsp; Café
+              </p>
+              <p className="font-body text-base text-espresso/70 leading-relaxed mb-9 max-w-sm">
+                Freshly baked pastries, handcrafted cakes, wholesome meals and exceptional coffee, all with a view.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link to="/menu"
-                  className="px-8 py-3.5 bg-espresso text-cream font-body font-semibold text-sm rounded-full hover:bg-espresso/85 transition-all shadow-sm">
-                  View Our Menu
+                  className="px-8 py-3.5 bg-espresso text-cream font-body font-semibold text-sm tracking-[0.08em] uppercase rounded hover:bg-espresso/85 transition-all shadow-sm">
+                  View Our Menu &rarr;
                 </Link>
                 <Link to="/custom-cakes"
-                  className="px-8 py-3.5 border border-espresso/40 text-espresso font-body font-semibold text-sm rounded-full hover:border-espresso hover:bg-espresso/5 transition-all">
-                  Book a Table
+                  className="px-8 py-3.5 border border-espresso/35 text-espresso font-body font-semibold text-sm tracking-[0.08em] uppercase rounded hover:border-espresso hover:bg-espresso/5 transition-all">
+                  Make an Enquiry
                 </Link>
               </div>
             </motion.div>
