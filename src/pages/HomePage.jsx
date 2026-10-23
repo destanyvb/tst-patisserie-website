@@ -17,14 +17,14 @@ const categories = [
 ]
 
 const signature = [
-  { name: 'Celebration Cakes',  sub: 'Naked, layered, dressed with fresh fruit',     img: '/images/tst_naked_cake.jpg',     to: '/custom-cakes', pos: 'center 20%' },
+  { name: 'Celebration Cakes',  sub: 'Naked, layered, dressed with fresh fruit',     img: '/images/tst_naked_cake.jpg',     to: '/custom-cakes', pos: 'center 50%' },
   { name: 'Signature Desserts', sub: 'Fresh tarts and desserts from the case',        img: '/images/tst_fruit_tart.webp',    to: '/menu',         pos: 'center' },
   { name: 'Jam Star Cookies',   sub: 'Buttery linzer cookies, baked in-house',        img: '/images/tst_linzer_cookies.webp',to: '/menu',         pos: 'center' },
   { name: 'Events and Catering',sub: 'Tiered displays and spreads for any occasion',  img: '/images/tst_tiered_stand.jpg',   to: '/contact',      pos: 'center 40%' },
 ]
 
 const gallery = [
-  { img: '/images/tst_walnut_brownies.jpg', label: 'Walnut Brownies', pos: 'center'     },
+  { img: '/images/tst_cupcakes.jpg',         label: 'Berry Cupcakes', pos: 'center 30%' },
   { img: '/images/tst_choc_dome.webp',      label: 'Chocolate Dome',  pos: 'center'     },
   { img: '/images/tst_victoria_cake.jpg',   label: 'Victoria Sponge', pos: 'center 75%' },
   { img: '/images/tst_caramel_tart.webp',   label: 'Caramel Tart',    pos: 'center'     },
@@ -337,7 +337,7 @@ export default function HomePage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/55 via-transparent to-transparent" />
               {/* Right-edge fade into centre content block */}
-              <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(to left, #EBF6FA 0%, rgba(235,246,250,0.55) 22%, transparent 52%)' }} />
+              <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(to left, rgba(235,246,250,0.75) 0%, rgba(235,246,250,0.25) 18%, transparent 36%)' }} />
               <div className="absolute bottom-5 left-5 right-5">
                 <p className="font-display text-lg font-bold text-cream leading-snug drop-shadow-lg">
                   A Little Café with a Big Heart.
@@ -387,7 +387,7 @@ export default function HomePage() {
                 referrerPolicy="no-referrer-when-downgrade"
               />
               {/* Left-edge fade into centre content block */}
-              <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(to right, #EBF6FA 0%, rgba(235,246,250,0.55) 22%, transparent 52%)' }} />
+              <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(to right, rgba(235,246,250,0.75) 0%, rgba(235,246,250,0.25) 18%, transparent 36%)' }} />
             </motion.div>
 
           </div>

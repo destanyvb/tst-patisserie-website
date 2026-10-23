@@ -106,7 +106,7 @@ export default function CustomCakesPage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {[
               { src: '/images/tst_choc_cake.jpg',              alt: 'Chocolate celebration cake',   pos: 'center 30%' },
-              { src: '/images/tst_choc_layer_cake.jpg',      alt: 'Layered chocolate cake',       pos: 'center 35%' },
+              { src: '/images/tst_choc_dome.webp',           alt: 'Chocolate dome dessert',        pos: 'center'     },
               { src: '/images/tst_victoria_cake.jpg',        alt: 'Victoria sponge with berries', pos: 'center 80%' },
               { src: '/images/tst_passionfruit_cheesecake2.jpg', alt: 'Passionfruit cheesecake',  pos: 'center 30%' },
               { src: '/images/tst_strawberry_cupcakes.jpg',  alt: 'Strawberry cupcakes',          pos: 'center 40%' },
