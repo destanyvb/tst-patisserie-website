@@ -249,10 +249,10 @@ export default function MenuPage() {
           className="flex gap-3 justify-center max-w-3xl mx-auto"
         >
           {[
-            { src: '/images/gallery_croissants.jpg',    alt: 'Fresh croissants',  pos: 'center 40%' },
-            { src: '/images/gallery_custard_tarts.jpg', alt: 'Custard tarts',     pos: 'center 35%' },
-            { src: '/images/tst_caramel_tart.webp',     alt: 'Caramel tart',      pos: 'center'     },
-            { src: '/images/tst_cupcakes.jpg',          alt: 'Berry cupcakes',    pos: 'center'     },
+            { src: '/images/tst_choc_layer_cake.jpg', alt: 'Chocolate layer cake', pos: 'center 35%' },
+            { src: '/images/tst_brownies.jpg',         alt: 'Walnut brownies',      pos: 'center 40%' },
+            { src: '/images/tst_pink_cupcakes.webp',   alt: 'Pink cupcakes',        pos: 'center'     },
+            { src: '/images/tst_chocolate_slice.jpg',  alt: 'Chocolate slice',      pos: 'center 40%' },
           ].map((img) => (
             <div
               key={img.src}

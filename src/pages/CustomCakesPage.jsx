@@ -86,6 +86,65 @@ export default function CustomCakesPage() {
         </div>
       </section>
 
+      {/* Examples of our work */}
+      <section className="py-20 px-4 sm:px-6" style={{ background: '#FFFBEB' }}>
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0 }}
+            className="mb-10"
+          >
+            <p className="font-body text-xs tracking-[0.2em] uppercase text-gold font-semibold mb-3">
+              Our Work
+            </p>
+            <h2 className="font-display text-3xl font-bold text-espresso">
+              A few examples from the kitchen.
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            {[
+              { src: '/images/tst_choc_cake.jpg',         alt: 'Chocolate celebration cake',        pos: 'center 30%' },
+              { src: '/images/tst_choc_layer_cake.jpg',   alt: 'Layered chocolate cake',            pos: 'center 35%' },
+              { src: '/images/tst_victoria_cake.jpg',     alt: 'Victoria sponge with berries',      pos: 'center 88%' },
+              { src: '/images/tst_victoria_sponge.webp',  alt: 'Victoria sponge celebration cake',  pos: 'center 30%' },
+              { src: '/images/tst_pink_cupcakes.webp',    alt: 'Pink frosted cupcakes',             pos: 'center'     },
+              { src: '/images/tst_strawberry_cupcakes.jpg', alt: 'Strawberry cupcakes',            pos: 'center 40%' },
+            ].map(({ src, alt, pos }, i) => (
+              <motion.div
+                key={src}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0 }}
+                transition={{ delay: i * 0.08, duration: 0.6 }}
+                className="overflow-hidden rounded-2xl shadow-sm"
+              >
+                <img
+                  src={src}
+                  alt={alt}
+                  className="w-full h-52 object-cover hover:scale-105 transition-transform duration-500"
+                  style={{ objectPosition: pos }}
+                />
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0 }}
+            transition={{ delay: 0.3 }}
+            className="mt-10 rounded-2xl p-6 text-center border border-pyellowMid/50"
+            style={{ background: 'rgba(255,255,255,0.7)' }}
+          >
+            <p className="font-body text-sm text-muted leading-relaxed max-w-md mx-auto">
+              Every cake is made to order. Come in and speak to us, or fill in the form below to start planning yours.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Enquiry form */}
       <section className="bg-parchment border-t border-border py-20 px-4 sm:px-6 mb-16 md:mb-0">
         <div className="max-w-2xl mx-auto">

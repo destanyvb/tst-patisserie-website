@@ -17,17 +17,17 @@ const categories = [
 ]
 
 const signature = [
-  { name: 'Pastries & Savouries',   sub: 'Fresh from the counter every morning',  img: '/images/tst_catering.webp',         to: '/menu',         pos: 'center 55%' },
-  { name: 'Celebration Cakes',      sub: 'Naked, layered, dressed with fruit',    img: '/images/tst_victoria_cake.jpg',     to: '/custom-cakes', pos: 'center 88%' },
-  { name: 'Signature Desserts',     sub: 'Fresh tarts and desserts from the case', img: '/images/tst_fruit_tart.webp',      to: '/menu',         pos: 'center' },
-  { name: 'Passionfruit Cheesecake', sub: 'Baked fresh, topped with passionfruit', img: '/images/tst_passionfruit_tart.jpg', to: '/menu',        pos: 'center 35%' },
+  { name: 'Celebration Cakes',       sub: 'Naked, layered, dressed with fresh fruit',  img: '/images/tst_naked_cake.jpg',               to: '/custom-cakes', pos: 'center 20%' },
+  { name: 'Signature Desserts',      sub: 'Fresh tarts and desserts from the case',     img: '/images/tst_fruit_tart.webp',              to: '/menu',         pos: 'center' },
+  { name: 'Jam Star Cookies',        sub: 'Buttery linzer cookies, baked in-house',     img: '/images/tst_linzer_cookies.webp',          to: '/menu',         pos: 'center' },
+  { name: 'Passionfruit Cheesecake', sub: 'Baked fresh, topped with passionfruit',      img: '/images/tst_passionfruit_cheesecake2.jpg', to: '/menu',         pos: 'center 30%' },
 ]
 
 const gallery = [
-  { img: '/images/tst_catering.webp',       label: 'Catering Spreads'      },
-  { img: '/images/tst_caramel_tart.webp',   label: 'Caramel Tart'          },
-  { img: '/images/tst_ig_01.jpg',           label: 'Celebration Desserts'  },
-  { img: '/images/tst_linzer_cookies.webp', label: 'Jam Star Cookies'      },
+  { img: '/images/tst_walnut_brownies.jpg', label: 'Walnut Brownies'   },
+  { img: '/images/tst_choc_dome.webp',      label: 'Chocolate Dome'    },
+  { img: '/images/tst_victoria_cake.jpg',   label: 'Victoria Sponge'   },
+  { img: '/images/tst_caramel_tart.webp',   label: 'Caramel Tart'      },
 ]
 
 const reviews = [
@@ -127,10 +127,10 @@ export default function HomePage() {
 
           <motion.div {...up()} className="relative">
             <img
-              src="/images/tst_afternoon_tea.jpg"
-              alt="Afternoon high tea spread at The Sweetest Thing Patisserie"
+              src="/images/tst_catering_display.webp"
+              alt="Pastry and cake display at The Sweetest Thing Patisserie"
               className="w-full h-[460px] object-cover rounded-3xl shadow-lg"
-              style={{ objectPosition: 'center 40%' }}
+              style={{ objectPosition: 'center 30%' }}
             />
             {/* Soft pastel blue accent square behind photo */}
             <div className="absolute -bottom-5 -left-5 w-36 h-36 rounded-3xl bg-pbluePale border border-pblueMid/50 -z-10" />
@@ -282,10 +282,10 @@ export default function HomePage() {
           <motion.div {...up()} className="flex items-end justify-between mb-12">
             <div>
               <p className="font-body text-xs tracking-[0.22em] uppercase text-gold font-semibold mb-2">
-                Sweet Moments
+                From the Counter
               </p>
               <h2 className="font-display text-4xl font-bold text-espresso">
-                A taste of our favourites.
+                A glimpse of what we bake.
               </h2>
             </div>
             <Link to="/gallery"
@@ -335,6 +335,8 @@ export default function HomePage() {
                 style={{ objectPosition: 'center 20%' }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/55 via-transparent to-transparent" />
+              {/* Left-edge fade into section background */}
+              <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(to right, #EBF6FA 0%, rgba(235,246,250,0.55) 22%, transparent 52%)' }} />
               <div className="absolute bottom-5 left-5 right-5">
                 <p className="font-display text-lg font-bold text-cream leading-snug drop-shadow-lg">
                   A Little Café with a Big Heart.
@@ -383,6 +385,8 @@ export default function HomePage() {
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
               />
+              {/* Right-edge fade into section background */}
+              <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(to left, #EBF6FA 0%, rgba(235,246,250,0.55) 22%, transparent 52%)' }} />
             </motion.div>
 
           </div>

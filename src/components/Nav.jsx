@@ -47,12 +47,12 @@ export default function Nav() {
             {/* Striped outer ring — alternating gold and pale cream, matching the sign's border */}
             <div
               className="absolute inset-0 rounded-[50%]"
-              style={{ background: 'repeating-linear-gradient(90deg, #C9A040 0px, #C9A040 5px, #F7E88A 5px, #F7E88A 10px)' }}
+              style={{ background: 'repeating-linear-gradient(90deg, #C9A040 0px, #C9A040 3px, #F7E88A 3px, #F7E88A 6px)' }}
             />
             {/* Thin dark inner ring — creates separation between stripes and content */}
-            <div className="absolute inset-[8px] rounded-[50%]" style={{ background: '#B8902E' }} />
+            <div className="absolute inset-[5px] rounded-[50%]" style={{ background: '#B8902E' }} />
             {/* White interior of the oval */}
-            <div className="absolute inset-[10px] rounded-[50%] group-hover:opacity-95 transition-opacity" style={{ background: '#FFFEF8' }} />
+            <div className="absolute inset-[7px] rounded-[50%] group-hover:opacity-95 transition-opacity" style={{ background: '#FFFEF8' }} />
             {/* Text — mirroring the sign: small "The", large "Sweetest Thing", medium "Pâtisserie" */}
             <div className="relative z-10 text-center leading-none px-3">
               <div className="font-logo text-[9px] md:text-[10.5px] text-espresso leading-none">The</div>

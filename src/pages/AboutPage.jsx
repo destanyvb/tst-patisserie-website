@@ -147,10 +147,10 @@ export default function AboutPage() {
       {/* Photo band */}
       <section className="grid grid-cols-2 sm:grid-cols-4 h-48 sm:h-64">
         {[
-          { src: '/images/gallery_croissants.jpg',   alt: 'Croissants'       },
-          { src: '/images/tst_linzer_cookies.webp',  alt: 'Jam star cookies' },
-          { src: '/images/gallery_coffee.jpg',       alt: 'Coffee'           },
-          { src: '/images/tst_shop_shelf.webp',      alt: 'Shop display'     },
+          { src: '/images/tst_strawberry_cupcakes.jpg', alt: 'Strawberry cupcakes'   },
+          { src: '/images/tst_caramel_tart.webp',       alt: 'Caramel tart'          },
+          { src: '/images/tst_tiered_stand.jpg',        alt: 'Tiered cake stand'     },
+          { src: '/images/tst_shop_shelf.webp',         alt: 'Shop display'          },
         ].map(({ src, alt }) => (
           <div key={src} className="overflow-hidden">
             <img src={src} alt={alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
