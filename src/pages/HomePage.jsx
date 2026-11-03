@@ -19,7 +19,7 @@ const categories = [
 const signature = [
   { name: 'Celebration Cakes',  sub: 'Naked, layered, dressed with fresh fruit',     img: '/images/tst_naked_cake.jpg',     to: '/custom-cakes', pos: 'center 80%' },
   { name: 'Signature Desserts', sub: 'Fresh tarts and desserts from the case',        img: '/images/tst_fruit_tart.webp',    to: '/menu',         pos: 'center' },
-  { name: 'Jam Star Cookies',   sub: 'Buttery linzer cookies, baked in-house',        img: '/images/tst_linzer_cookies.webp',to: '/menu',         pos: 'center' },
+  { name: 'Jam Star Cookies',   sub: 'Buttery linzer cookies, baked fresh each morning',        img: '/images/tst_linzer_cookies.webp',to: '/menu',         pos: 'center' },
   { name: 'Events and Catering',sub: 'Tiered displays and spreads for any occasion',  img: '/images/tst_event_spread.jpg',   to: '/contact',      pos: 'center 55%' },
 ]
 
@@ -45,7 +45,7 @@ export default function HomePage() {
         {/* Coastal café hero — harbour view, yellow umbrella, croissant on mosaic table */}
         <img
           src="/images/hero_cafe_coastal.webp"
-          alt="The Sweetest Thing Patisserie — café by the harbour in Simon's Town"
+          alt="The Sweetest Thing Patisserie, café by the harbour in Simon's Town"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: 'center center' }}
         />
@@ -146,10 +146,10 @@ export default function HomePage() {
             </h2>
             <div className="space-y-4 font-body text-base text-muted leading-relaxed mb-8">
               <p>
-                The Sweetest Thing is a family-run patisserie nestled on the main street of Simon's Town. Since 2005, Doreen and her team have been getting up early every morning to make something worth eating.
+                The Sweetest Thing is a family owned patisserie nestled on the main street of Simon's Town. Since 2005, Doreen and her team have been getting up early every morning to make something worth eating.
               </p>
               <p>
-                Every item is made from scratch that morning. The croissants are laminated by hand. The menu changes daily — come early, because when we sell out, we are done.
+                Every item is made from scratch that morning. The croissants are laminated by hand. The menu changes daily. Come early, because when we sell out, we are done.
               </p>
             </div>
             <div className="flex gap-6 mb-8">

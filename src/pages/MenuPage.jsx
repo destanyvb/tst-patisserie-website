@@ -99,7 +99,7 @@ const tabs = [
         ],
       },
       {
-        heading: 'Omelette Add-ons',
+        heading: 'Omelette Extras',
         items: [
           { name: 'Smoked Salmon',                              price: 'R48'  },
           { name: 'Bacon or Ham',                               price: 'R33'  },
