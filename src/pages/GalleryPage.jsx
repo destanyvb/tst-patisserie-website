@@ -13,7 +13,6 @@ const photos = [
   { src: '/images/tst_tiered_catering.jpg',    alt: 'Three tier gold catering stand with brownies, fruit tarts and cream puffs', caption: 'Three tier catering stand'              },
   { src: '/images/tst_easter_cupcakes.jpg',    alt: 'Easter nest chocolate cupcakes with pastel candy eggs on top',           caption: 'Easter nest cupcakes'                      },
   { src: '/images/tst_choc_eggs.jpg',          alt: 'Gold dusted dark chocolate eggs arranged on a baking mat',               caption: 'Handmade chocolate eggs'                   },
-  { src: '/images/tst_savoury_quiche.jpg',     alt: 'Black platter with mini quiches and seeded sausage rolls',               caption: 'Mini quiches and sausage rolls'             },
   { src: '/images/tst_savoury_catering.jpg',   alt: 'Large savoury catering platters with sandwiches, salmon bites and pastries', caption: 'Savoury catering platters'          },
 ]
 

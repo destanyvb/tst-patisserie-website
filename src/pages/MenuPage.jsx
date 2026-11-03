@@ -249,10 +249,10 @@ export default function MenuPage() {
           className="flex gap-3 justify-center max-w-3xl mx-auto"
         >
           {[
-            { src: '/images/tst_victoria_cake.jpg',    alt: 'Victoria sponge cake', pos: 'center 40%' },
-            { src: '/images/tst_brownies.jpg',          alt: 'Brownies',             pos: 'center 40%' },
-            { src: '/images/tst_pink_cupcakes.webp',    alt: 'Pink cupcakes',        pos: 'center'     },
-            { src: '/images/tst_chocolate_slice.jpg',   alt: 'Chocolate slice',      pos: 'center 40%' },
+            { src: '/images/tst_savoury_quiche.jpg',    alt: 'Mini quiches and sausage rolls on a platter', pos: 'center 35%' },
+            { src: '/images/tst_brownies.jpg',           alt: 'Freshly baked brownies',                      pos: 'center 40%' },
+            { src: '/images/tst_ig_02.jpg',              alt: 'Afternoon tea spread with scones and pastries', pos: 'center'     },
+            { src: '/images/tst_chocolate_slice.jpg',    alt: 'Chocolate slice',                              pos: 'center 40%' },
           ].map((img) => (
             <div
               key={img.src}
