@@ -222,7 +222,7 @@ export default function HomePage() {
             <div className="relative rounded-3xl overflow-hidden flex-1 min-h-[340px] shadow-md">
               <img src="/images/tst_purple_birthday_cake.jpg" alt="Purple and pink birthday cake with macarons and gold spheres"
                 className="absolute inset-0 w-full h-full object-cover"
-                style={{ objectPosition: 'center 35%' }} />
+                style={{ objectPosition: 'center 50%' }} />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/40 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4">
                 <span className="inline-block font-body text-xs font-semibold text-espresso bg-pyellowMid/90 rounded-full px-4 py-2">
