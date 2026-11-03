@@ -17,17 +17,17 @@ const categories = [
 ]
 
 const signature = [
-  { name: 'Celebration Cakes',  sub: 'Naked, layered, dressed with fresh fruit',     img: '/images/tst_naked_cake.jpg',     to: '/custom-cakes', pos: 'center 50%' },
+  { name: 'Celebration Cakes',  sub: 'Naked, layered, dressed with fresh fruit',     img: '/images/tst_naked_cake.jpg',     to: '/custom-cakes', pos: 'center 65%' },
   { name: 'Signature Desserts', sub: 'Fresh tarts and desserts from the case',        img: '/images/tst_fruit_tart.webp',    to: '/menu',         pos: 'center' },
   { name: 'Jam Star Cookies',   sub: 'Buttery linzer cookies, baked in-house',        img: '/images/tst_linzer_cookies.webp',to: '/menu',         pos: 'center' },
   { name: 'Events and Catering',sub: 'Tiered displays and spreads for any occasion',  img: '/images/tst_tiered_stand.jpg',   to: '/contact',      pos: 'center 40%' },
 ]
 
 const gallery = [
-  { img: '/images/tst_cupcakes.jpg',         label: 'Berry Cupcakes', pos: 'center 30%' },
-  { img: '/images/tst_choc_dome.webp',      label: 'Chocolate Dome',  pos: 'center'     },
-  { img: '/images/tst_victoria_cake.jpg',   label: 'Victoria Sponge', pos: 'center 75%' },
-  { img: '/images/tst_caramel_tart.webp',   label: 'Caramel Tart',    pos: 'center'     },
+  { img: '/images/tst_cupcakes.jpg',            label: 'Berry Cupcakes',     pos: 'center 55%' },
+  { img: '/images/tst_choc_dome.webp',          label: 'Chocolate Dome',     pos: 'center'     },
+  { img: '/images/tst_passionfruit_tart.jpg',   label: 'Passionfruit Tart',  pos: 'center'     },
+  { img: '/images/tst_caramel_tart.webp',       label: 'Caramel Tart',       pos: 'center'     },
 ]
 
 const reviews = [
