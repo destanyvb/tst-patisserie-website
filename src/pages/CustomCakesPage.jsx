@@ -113,6 +113,7 @@ export default function CustomCakesPage() {
               { src: '/images/tst_pink_girl_cake.jpg',         alt: 'Pink drip celebration cake with macarons and white flowers',             pos: 'center 30%' },
               { src: '/images/tst_minnie_cake.jpg',            alt: 'Two tier Minnie Mouse fondant cake in pink and black',                  pos: 'center 30%' },
               { src: '/images/tst_green_drip_cake.jpg',        alt: 'Green drip cake with macarons and caramel popcorn topping',             pos: 'center 40%' },
+              { src: '/images/tst_fruit_tart.webp',            alt: 'Fresh fruit tart with custard and concentric seasonal berries and kiwi', pos: 'center 50%' },
             ].map(({ src, alt, pos }, i) => (
               <motion.div
                 key={src}
