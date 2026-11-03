@@ -112,6 +112,8 @@ export default function CustomCakesPage() {
               { src: '/images/tst_victoria_sponge.webp',  alt: 'Victoria sponge celebration cake dusted with icing sugar',    pos: 'center 30%' },
               { src: '/images/tst_victoria_cake.jpg',     alt: 'Victoria sponge with fresh berry topping',                    pos: 'center 25%' },
               { src: '/images/tst_white_choc_dome.jpg',   alt: 'White chocolate dome dessert with fresh berries',             pos: 'center 30%' },
+              { src: '/images/tst_60th_cake.jpg',         alt: 'Naked 60th birthday cake with baby\'s breath florals and gold candles', pos: 'center 30%' },
+              { src: '/images/tst_purple_birthday_cake.jpg', alt: 'Purple and pink birthday cake with cupcakes, macarons and gold spheres', pos: 'center 40%' },
             ].map(({ src, alt, pos }, i) => (
               <motion.div
                 key={src}

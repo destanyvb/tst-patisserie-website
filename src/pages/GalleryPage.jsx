@@ -40,6 +40,11 @@ const photos = [
   { src: '/images/tst_caramel_tart.jpg',            alt: 'Individual caramel tarts on a baking tray',                               caption: 'Caramel tarts'                           },
   { src: '/images/tst_event_spread.jpg',            alt: 'Tiered catering display for an event',                                     caption: 'Event catering display'                  },
   { src: '/images/tst_savoury_quiche.jpg',          alt: 'Mini quiches and sausage rolls on a platter',                              caption: 'Savoury bites'                           },
+  { src: '/images/tst_pink_girl_cake.jpg',          alt: 'Pink drip celebration cake with macarons and white flowers',                  caption: "It's a Girl celebration cake"            },
+  { src: '/images/tst_minnie_cake.jpg',             alt: 'Two tier Minnie Mouse fondant cake in pink and black',                       caption: 'Minnie Mouse celebration cake'           },
+  { src: '/images/tst_green_drip_cake.jpg',         alt: 'Green drip cake with macarons and caramel popcorn topping',                  caption: 'Green drip cake'                         },
+  { src: '/images/tst_shakshuka.jpg',               alt: 'Shakshuka with poached eggs in a copper pan served with toasted bread',      caption: 'Shakshuka with toasted bread'            },
+  { src: '/images/tst_orange_glaze_cake.jpg',       alt: 'Orange mirror glaze entremet with chocolate decorations',                    caption: 'Orange mirror glaze entremet'            },
 ]
 
 export default function GalleryPage() {
