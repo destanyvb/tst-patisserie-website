@@ -20,7 +20,7 @@ const signature = [
   { name: 'Celebration Cakes',  sub: 'Naked, layered, dressed with fresh fruit',     img: '/images/tst_naked_cake.jpg',     to: '/custom-cakes', pos: 'center 65%' },
   { name: 'Signature Desserts', sub: 'Fresh tarts and desserts from the case',        img: '/images/tst_fruit_tart.webp',    to: '/menu',         pos: 'center' },
   { name: 'Jam Star Cookies',   sub: 'Buttery linzer cookies, baked in-house',        img: '/images/tst_linzer_cookies.webp',to: '/menu',         pos: 'center' },
-  { name: 'Events and Catering',sub: 'Tiered displays and spreads for any occasion',  img: '/images/tst_tiered_stand.jpg',   to: '/contact',      pos: 'center 40%' },
+  { name: 'Events and Catering',sub: 'Tiered displays and spreads for any occasion',  img: '/images/tst_event_spread.jpg',   to: '/contact',      pos: 'center 30%' },
 ]
 
 const gallery = [
