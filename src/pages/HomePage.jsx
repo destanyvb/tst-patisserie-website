@@ -127,10 +127,10 @@ export default function HomePage() {
 
           <motion.div {...up()} className="relative">
             <img
-              src="/images/tst_tiered_catering.jpg"
-              alt="Three tier gold catering stand with cream puffs, fruit tarts and brownies"
+              src="/images/tst_croquembouche.jpg"
+              alt="Croquembouche tower of caramel choux puffs with spun gold sugar and orange flowers"
               className="w-full h-[460px] object-cover rounded-3xl shadow-lg"
-              style={{ objectPosition: 'center 5%' }}
+              style={{ objectPosition: 'center 20%' }}
             />
             {/* Soft pastel blue accent square behind photo */}
             <div className="absolute -bottom-5 -left-5 w-36 h-36 rounded-3xl bg-pbluePale border border-pblueMid/50 -z-10" />
