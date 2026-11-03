@@ -25,7 +25,7 @@ const signature = [
 
 const gallery = [
   { img: '/images/tst_cupcakes.jpg',            label: 'Berry Cupcakes',     pos: 'center 55%' },
-  { img: '/images/tst_choc_dome.webp',          label: 'Chocolate Dome',     pos: 'center'     },
+  { img: '/images/tst_choc_dome.webp',          label: 'Chocolate Dome',     pos: 'center 60%' },
   { img: '/images/tst_passionfruit_tart.jpg',   label: 'Passionfruit Tart',  pos: 'center'     },
   { img: '/images/tst_caramel_tart.webp',       label: 'Caramel Tart',       pos: 'center'     },
 ]
@@ -130,7 +130,7 @@ export default function HomePage() {
               src="/images/tst_croquembouche.jpg"
               alt="Croquembouche tower of caramel choux puffs with spun gold sugar and orange flowers"
               className="w-full h-[460px] object-cover rounded-3xl shadow-lg"
-              style={{ objectPosition: 'center 20%' }}
+              style={{ objectPosition: 'center 38%' }}
             />
             {/* Soft pastel blue accent square behind photo */}
             <div className="absolute -bottom-5 -left-5 w-36 h-36 rounded-3xl bg-pbluePale border border-pblueMid/50 -z-10" />
@@ -223,7 +223,7 @@ export default function HomePage() {
             <div className="relative rounded-3xl overflow-hidden flex-1 min-h-[340px] shadow-md">
               <img src="/images/tst_60th_cake.jpg" alt="Custom celebration cake"
                 className="absolute inset-0 w-full h-full object-cover"
-                style={{ objectPosition: 'center 30%' }} />
+                style={{ objectPosition: 'center 18%' }} />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/40 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4">
                 <span className="inline-block font-body text-xs font-semibold text-espresso bg-pyellowMid/90 rounded-full px-4 py-2">

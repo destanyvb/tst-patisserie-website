@@ -8,7 +8,6 @@ const photos = [
   { src: '/images/tst_meringue_pops.jpg',           alt: 'Pink and white meringue pops on wooden sticks laid out in the kitchen',      caption: 'Meringue pops, fresh from the kitchen'   },
   { src: '/images/tst_victoria_cake.jpg',           alt: 'Victoria sponge celebration cake with fresh berries',                        caption: 'Victoria sponge'                         },
   { src: '/images/tst_croissants.jpg',              alt: 'Chocolate drizzle croissants in a white bakery box',                         caption: 'Croissants, laminated by hand'           },
-  { src: '/images/tst_passionfruit_tart.jpg',       alt: 'Passionfruit tart with glazed topping',                                      caption: 'Passionfruit tart'                       },
   { src: '/images/tst_tiered_catering.jpg',         alt: 'Three tier gold catering stand with brownies, fruit tarts and cream puffs',  caption: 'Three tier catering stand'               },
   { src: '/images/tst_berry_cheesecake.jpg',        alt: 'Strawberry and raspberry mirror glaze celebration cake',                     caption: 'Berry mirror glaze cake'                 },
   { src: '/images/tst_donuts.jpg',                  alt: 'Chocolate glazed and cinnamon sugar ring donuts',                            caption: 'Chocolate glazed ring donuts'            },

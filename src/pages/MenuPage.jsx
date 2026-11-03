@@ -249,7 +249,7 @@ export default function MenuPage() {
           className="flex gap-3 justify-center max-w-3xl mx-auto"
         >
           {[
-            { src: '/images/tst_savoury_quiche.jpg',    alt: 'Mini quiches and sausage rolls on a platter', pos: 'center 35%' },
+            { src: '/images/tst_fish_cakes.jpg',         alt: 'Lunch plate with fish cakes, side salad and avocado dip', pos: 'center 40%' },
             { src: '/images/tst_brownies.jpg',           alt: 'Freshly baked brownies',                      pos: 'center 65%' },
             { src: '/images/tst_ig_02.jpg',              alt: 'Afternoon tea spread with scones and pastries', pos: 'center'     },
             { src: '/images/tst_savoury_catering.jpg',    alt: 'Savoury platters with sandwiches, salmon bites and pastries', pos: 'center 35%' },
