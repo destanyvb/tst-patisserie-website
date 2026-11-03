@@ -221,7 +221,7 @@ export default function HomePage() {
               From birthdays and baby showers to weddings and anniversaries. Come in and speak to us, or fill in the form and we will get back to you.
             </p>
             <div className="relative rounded-3xl overflow-hidden flex-1 min-h-[340px] shadow-md">
-              <img src="/images/tst_choc_layer_cake.jpg" alt="Custom celebration cake"
+              <img src="/images/tst_60th_cake.jpg" alt="Custom celebration cake"
                 className="absolute inset-0 w-full h-full object-cover"
                 style={{ objectPosition: 'center 30%' }} />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/40 via-transparent to-transparent" />
