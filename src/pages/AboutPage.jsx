@@ -148,9 +148,9 @@ export default function AboutPage() {
       <section className="grid grid-cols-2 sm:grid-cols-4 h-48 sm:h-64">
         {[
           { src: '/images/tst_ig_01.jpg',           alt: 'White chocolate dome dessert from the patisserie' },
-          { src: '/images/tst_victoria_cake.jpg',  alt: 'Victoria sponge celebration cake with fresh berries' },
-          { src: '/images/tst_catering.webp',      alt: 'Tiered stand of tarts, brownies and pastries' },
-          { src: '/images/tst_pink_cupcakes.webp', alt: 'Pink frosted cupcakes from the patisserie counter' },
+          { src: '/images/tst_berry_cheesecake.jpg',    alt: 'Strawberry and raspberry mirror glaze celebration cake' },
+          { src: '/images/tst_passionfruit_domes.jpg', alt: 'Passionfruit mirror glaze individual entremets' },
+          { src: '/images/tst_lemon_loaf.jpg',          alt: 'Lemon and blueberry loaf cake with lemon glaze' },
         ].map(({ src, alt }) => (
           <div key={src} className="overflow-hidden">
             <img src={src} alt={alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />

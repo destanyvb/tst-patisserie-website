@@ -17,10 +17,10 @@ const categories = [
 ]
 
 const signature = [
-  { name: 'Celebration Cakes',  sub: 'Naked, layered, dressed with fresh fruit',     img: '/images/tst_naked_cake.jpg',     to: '/custom-cakes', pos: 'center 65%' },
+  { name: 'Celebration Cakes',  sub: 'Naked, layered, dressed with fresh fruit',     img: '/images/tst_naked_cake.jpg',     to: '/custom-cakes', pos: 'center 80%' },
   { name: 'Signature Desserts', sub: 'Fresh tarts and desserts from the case',        img: '/images/tst_fruit_tart.webp',    to: '/menu',         pos: 'center' },
   { name: 'Jam Star Cookies',   sub: 'Buttery linzer cookies, baked in-house',        img: '/images/tst_linzer_cookies.webp',to: '/menu',         pos: 'center' },
-  { name: 'Events and Catering',sub: 'Tiered displays and spreads for any occasion',  img: '/images/tst_event_spread.jpg',   to: '/contact',      pos: 'center 30%' },
+  { name: 'Events and Catering',sub: 'Tiered displays and spreads for any occasion',  img: '/images/tst_event_spread.jpg',   to: '/contact',      pos: 'center 55%' },
 ]
 
 const gallery = [
@@ -127,10 +127,10 @@ export default function HomePage() {
 
           <motion.div {...up()} className="relative">
             <img
-              src="/images/tst_catering_display.webp"
-              alt="Pastry and cake display at The Sweetest Thing Patisserie"
+              src="/images/tst_tiered_catering.jpg"
+              alt="Three tier gold catering stand with cream puffs, fruit tarts and brownies"
               className="w-full h-[460px] object-cover rounded-3xl shadow-lg"
-              style={{ objectPosition: 'center 30%' }}
+              style={{ objectPosition: 'center 5%' }}
             />
             {/* Soft pastel blue accent square behind photo */}
             <div className="absolute -bottom-5 -left-5 w-36 h-36 rounded-3xl bg-pbluePale border border-pblueMid/50 -z-10" />
@@ -221,7 +221,7 @@ export default function HomePage() {
               From birthdays and baby showers to weddings and anniversaries. Come in and speak to us, or fill in the form and we will get back to you.
             </p>
             <div className="relative rounded-3xl overflow-hidden flex-1 min-h-[340px] shadow-md">
-              <img src="/images/tst_victoria_sponge.webp" alt="Custom celebration cake"
+              <img src="/images/tst_choc_layer_cake.jpg" alt="Custom celebration cake"
                 className="absolute inset-0 w-full h-full object-cover"
                 style={{ objectPosition: 'center 30%' }} />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/40 via-transparent to-transparent" />
