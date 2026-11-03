@@ -107,11 +107,9 @@ export default function CustomCakesPage() {
             {[
               { src: '/images/tst_drip_cake.jpg',              alt: 'Pink drip celebration cake with macarons and fresh berries',              pos: 'center 30%' },
               { src: '/images/tst_choc_lace_cake.jpg',         alt: 'Chocolate cake with lace collar and fresh berries',                     pos: 'center 40%' },
-              { src: '/images/tst_naked_cake.jpg',             alt: 'Naked celebration cake layered with fresh fruit and cream',              pos: 'center 40%' },
-              { src: '/images/tst_choc_layer_cake.jpg',        alt: 'Layered chocolate celebration cake',                                    pos: 'center 30%' },
-              { src: '/images/tst_white_choc_dome.jpg',        alt: 'White chocolate dome dessert with fresh berries',                       pos: 'center 30%' },
-              { src: '/images/tst_60th_cake.jpg',              alt: 'Naked 60th birthday cake with baby\'s breath florals and gold candles',  pos: 'center 30%' },
+              { src: '/images/tst_60th_cake.jpg',              alt: 'Naked 60th birthday cake with baby\'s breath florals and gold candles',  pos: 'center 40%' },
               { src: '/images/tst_purple_birthday_cake.jpg',   alt: 'Purple and pink birthday cake with cupcakes, macarons and gold spheres', pos: 'center 40%' },
+              { src: '/images/tst_orange_glaze_cake.jpg',      alt: 'Orange mirror glaze entremet with chocolate decorations',               pos: 'center 50%' },
               { src: '/images/tst_pink_girl_cake.jpg',         alt: 'Pink drip celebration cake with macarons and white flowers',             pos: 'center 30%' },
               { src: '/images/tst_minnie_cake.jpg',            alt: 'Two tier Minnie Mouse fondant cake in pink and black',                  pos: 'center 30%' },
               { src: '/images/tst_green_drip_cake.jpg',        alt: 'Green drip cake with macarons and caramel popcorn topping',             pos: 'center 40%' },
@@ -127,7 +125,7 @@ export default function CustomCakesPage() {
                 <img
                   src={src}
                   alt={alt}
-                  className="w-full h-52 object-cover hover:scale-105 transition-transform duration-500"
+                  className="w-full h-72 object-cover hover:scale-105 transition-transform duration-500"
                   style={{ objectPosition: pos }}
                 />
               </motion.div>

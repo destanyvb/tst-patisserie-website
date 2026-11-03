@@ -35,7 +35,6 @@ const photos = [
   { src: '/images/tst_event_spread.jpg',            alt: 'Tiered catering display for an event',                                     caption: 'Event catering display'                  },
   { src: '/images/tst_savoury_quiche.jpg',          alt: 'Mini quiches and sausage rolls on a platter',                              caption: 'Savoury bites'                           },
   { src: '/images/tst_shakshuka.jpg',               alt: 'Shakshuka with poached eggs in a copper pan served with toasted bread',      caption: 'Shakshuka with toasted bread'            },
-  { src: '/images/tst_orange_glaze_cake.jpg',       alt: 'Orange mirror glaze entremet with chocolate decorations',                    caption: 'Orange mirror glaze entremet'            },
 ]
 
 export default function GalleryPage() {
